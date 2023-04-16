@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sam-ayoub-portfolio/static/css/main.46bfb17e.css",
+    "main.css": "/sam-ayoub-portfolio/static/css/main.18115518.css",
     "main.js": "/sam-ayoub-portfolio/static/js/main.2a1269d0.js",
     "static/js/651.0b12483f.chunk.js": "/sam-ayoub-portfolio/static/js/651.0b12483f.chunk.js",
     "static/media/testimonials-bg.jpg": "/sam-ayoub-portfolio/static/media/testimonials-bg.ad53899f436e208a9811.jpg",
@@ -9,12 +9,12 @@
     "static/media/revicons.ttf": "/sam-ayoub-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/sam-ayoub-portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/sam-ayoub-portfolio/index.html",
-    "main.46bfb17e.css.map": "/sam-ayoub-portfolio/static/css/main.46bfb17e.css.map",
+    "main.18115518.css.map": "/sam-ayoub-portfolio/static/css/main.18115518.css.map",
     "main.2a1269d0.js.map": "/sam-ayoub-portfolio/static/js/main.2a1269d0.js.map",
     "651.0b12483f.chunk.js.map": "/sam-ayoub-portfolio/static/js/651.0b12483f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46bfb17e.css",
+    "static/css/main.18115518.css",
     "static/js/main.2a1269d0.js"
   ]
 }
