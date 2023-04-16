@@ -1,7 +1,8 @@
-import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+/* eslint-disable react/prop-types */
+import React, { Component } from 'react';
+import Zmage from 'react-zmage';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -22,8 +23,6 @@ const responsive = {
   }
 };
 
-
-
 let id = 0;
 class Portfolio extends Component {
   render() {
@@ -36,8 +35,8 @@ class Portfolio extends Component {
         <a href={projects.url} key={id++} className="columns portfolio-item">
           <div className="item-wrap">
             <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-            <div style={{ textAlign: "center" }}>Learn more</div>
+            <div style={{ textAlign: 'center' }}>{projects.title}</div>
+            <div style={{ textAlign: 'center' }}>Learn more</div>
           </div>
         </a>
       );
@@ -45,13 +44,11 @@ class Portfolio extends Component {
 
     return (
       <section id="portfolio">
-        <div left duration={1000} distance="40px">
+        <div>
           <div className="row">
             <div className="twelve columns collapsed">
               <h1>Check Out Some of My Works.</h1>
-                <Carousel responsive={responsive}>
-                    {projects}
-                </Carousel>
+              <Carousel responsive={responsive}>{projects}</Carousel>
             </div>
           </div>
         </div>

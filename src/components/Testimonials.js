@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+/* eslint-disable react/prop-types */
+import React, { Component } from 'react';
 
 class Testimonials extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const testimonials = this.props.data.testimonials.map(function(testimonials) {
+    const testimonials = this.props.data.testimonials.map(function (testimonials) {
       return (
         <li key={testimonials.user}>
           <blockquote>

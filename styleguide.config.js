@@ -19,74 +19,11 @@ module.exports = {
   },
   skipComponentsWithoutExample: true,
   title: 'DDKits CLI',
-  sections: [
-    {
-      name: 'Home',
-      external: true,
-      href: 'https://home.ddkits.com'
-    },
-    {
-      name: 'Introduction',
-      content: 'docs/introduction.md'
-    },
-    {
-      name: 'Documentation',
-      description:
-        'API Doc Pro UI Render, is the smallest and fastest Async and Open API UI rendering, using React and Bootstrap.',
-      sections: [
-        {
-          name: 'Installation',
-          content: 'docs/installation.md',
-          description: 'Simple to use'
-        },
-        {
-          name: 'Configuration',
-          content: 'docs/configuration.md'
-        },
-        {
-          name: 'DDKits Editor',
-          external: true,
-          href: 'https://DDKits.com'
-        }
-      ]
-    },
-    {
-      name: 'Demo',
-      components: 'src/app.js'
-      //   defaultExample: true,
-    },
-    {
-      name: 'Contributors',
-      content: 'docs/contributors.md'
-      //   defaultExample: true,
-    },
-    {
-      name: 'Core',
-      components: '*.sh',
-      defaultExample: false,
-      sectionDepth: 0
-    },
-    {
-      name: 'Templates',
-      components: 'ddkits-files/**/*.sh',
-      defaultExample: false,
-      sectionDepth: 2
-    },
-    {
-      name: 'Helpers',
-      components: 'ddkits-files/ddkits/*.sh',
-      defaultExample: false,
-      sectionDepth: 0
-    }
-  ],
+  components: 'src/app.js',
   moduleAliases: {
     'rsg-example': path.resolve(__dirname, 'src')
   },
   version,
-  ribbon: {
-    text: 'Sponsor Me!',
-    url: 'https://opencollective.com/reallexi'
-  },
   defaultExample: false,
   webpackConfig: {
     module: {
@@ -105,24 +42,32 @@ module.exports = {
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
-          test: /\.sh$/,
-          use: ['text-loader']
+          test: /\.jpeg$/,
+          use: ['file-loader']
+        },
+        {
+          test: /\.gif$/,
+          use: ['file-loader']
+        },
+        {
+          test: /\.png$/,
+          use: ['file-loader']
         }
       ]
     }
   },
   // Don't include an Object.assign ponyfill, we have our own
-  // pagePerSection: process.env.NODE_ENV !== 'production',
-  mountPointId: 'DDKits',
-  tocMode: 'collapse', //'collapse' | 'expand'
-  exampleMode: 'collapse', // 'hide' | 'collapse' | 'expand'
+  pagePerSection: process.env.NODE_ENV !== 'production',
+  mountPointId: 'samayoub',
+  tocMode: 'hide', //'collapse' | 'expand'
+  exampleMode: 'hide', // 'hide' | 'collapse' | 'expand'
   usageMode: 'hide', // 'hide' | 'collapse' | 'expand',
   updateExample(props, exampleFilePath) {
     // props.settings are passed by any fenced code block, in this case
     const { settings, lang } = props;
-    // "../mySourceCode.sh"
+    // "../mySourceCode.js"
     if (settings?.file && typeof settings.file === 'string') {
-      // "absolute path to mySourceCode.sh"
+      // "absolute path to mySourceCode.js"
       const filepath = path.resolve(exampleFilePath, settings.file);
       // displays the block as static code
       settings.static = true;
@@ -141,17 +86,17 @@ module.exports = {
       base: '#000000',
       light: '#0f3452',
       lightest: '#ccc',
-      link: '#282c34',
+      link: '#FFFFFF',
       linkHover: '#343a40',
       focus: 'rgba(22, 115, 177, 0.25)',
       border: '#e8e8e8',
       name: '#f8f9fa',
       type: '#905',
       error: '#c00',
-      baseBackground: '#ccc',
+      baseBackground: '#000',
       codeBackground: '#000',
-      sidebarBackground: '#fff',
-      ribbonBackground: '#000',
+      sidebarBackground: '#007bff',
+      ribbonBackground: '#007bff',
       ribbonText: '#fff',
       // Based on default Prism theme
       codeBase: '#fff',
@@ -167,8 +112,8 @@ module.exports = {
       codeVariable: '#e90'
     },
     spaceFactor: 10,
-    sidebarWidth: 300,
-    maxWidth: 1400,
+    sidebarWidth: 0,
+    maxWidth: '100%',
     fontFamily: {
       base: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
     }

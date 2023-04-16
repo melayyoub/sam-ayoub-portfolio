@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+/* eslint-disable react/prop-types */
+import React, { Component } from 'react';
 
 class Resume extends Component {
   getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
+    let letters = '0123456789ABCDEF';
+    let color = '#';
     for (let i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
@@ -42,7 +43,7 @@ class Resume extends Component {
 
     const skills = this.props.data.skills.map((skills) => {
       const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
+      const className = 'bar-expand ' + skills.name.toLowerCase();
       const width = skills.level;
 
       return (
@@ -55,14 +56,13 @@ class Resume extends Component {
 
     return (
       <section id="resume">
-        <div left duration={1300}>
+        <div>
           <div className="row education">
             <div className="three columns header-col">
               <h1>
                 <span>Education</span>
               </h1>
             </div>
-
             <div className="nine columns main-col">
               <div className="row item">
                 <div className="twelve columns">{education}</div>
@@ -71,7 +71,7 @@ class Resume extends Component {
           </div>
         </div>
 
-        <div left duration={1300}>
+        <div>
           <div className="row work">
             <div className="three columns header-col">
               <h1>
@@ -83,7 +83,7 @@ class Resume extends Component {
           </div>
         </div>
 
-        <div left duration={1300}>
+        <div>
           <div className="row skill">
             <div className="three columns header-col">
               <h1>
@@ -93,7 +93,7 @@ class Resume extends Component {
 
             <div className="nine columns main-col">
               <p>{skillmessage}</p>
-
+              <br />
               <div className="bars">
                 <ul className="skills">{skills}</ul>
               </div>

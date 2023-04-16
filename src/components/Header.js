@@ -1,12 +1,10 @@
-import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
+/* eslint-disable react/prop-types */
+import React, { Component } from 'react';
+import ParticlesBg from 'particles-bg';
 
 class Header extends Component {
   render() {
     if (!this.props.data) return null;
-
-    const project = this.props.data.project;
-    const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
 
@@ -57,11 +55,13 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <div bottom>
+            <div>
               <h1 className="responsive-headline">{name}</h1>
             </div>
-            <div bottom duration={1200}>
-              {description.split('/').map(x => <h3 key={x}>{x}</h3>)}
+            <div>
+              {description.split('/').map((x) => (
+                <h3 key={x}>{x}</h3>
+              ))}
             </div>
             <hr />
           </div>

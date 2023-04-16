@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+/* eslint-disable react/prop-types */
+import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
@@ -17,16 +18,13 @@ class Footer extends Component {
     return (
       <footer>
         <div className="row">
-          <div bottom>
+          <div>
             <div className="twelve columns">
               <ul className="social-links">{networks}</ul>
 
               <ul className="copyright">
                 <li>&copy; Sam Ayoub</li>
-                <li>
-                  Design by{" Sam Ayoub "}
-          
-                </li>
+                <li>Design by{' Sam Ayoub '}</li>
               </ul>
             </div>
           </div>

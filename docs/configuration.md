@@ -1,10 +1,10 @@
-To configure the basic usage of APIDocPro UI render for any of the specifications, what you need to do is to import the package 
+To configure the basic usage of APIDocPro UI render for any of the specifications, what you need to do is to import the package
 
 ### CDN
+
 ```html
 Coming soon!!
 ```
-
 
 ### React
 
