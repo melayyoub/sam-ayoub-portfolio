@@ -8,7 +8,7 @@
     "url": "https://opencollective.com/reallexi"
   },
   "bugs": {
-    "url": "https://github.com/ddkits/portfolio/issues"
+    "url": "https://github.com/melayyoub/sam-ayoub-portfolio/issues"
   },
   "homepage": "https://sam.ddkits.com",
   "keywords": [
@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ddkits/apidocpro-openapi-ui-render"
+    "url": "git+https://github.com/melayyoub/sam-ayoub-portfolio"
   },
   "dependencies": {
     "@babel/polyfill": "^7",
