@@ -25,3 +25,4 @@ jobs:
     - run: npm install npx
     - run: npm run ready --if-present
     - run: npm test
+    - run: npx serve -s build
