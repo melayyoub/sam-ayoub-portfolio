@@ -1,0 +1,284 @@
+{
+  "main": {
+    "name": "Sam Ayoub",
+    "description": "Founder / Director / Senior Principal Software Architect / Senior Principal Software Engineer",
+    "image": "https://media.licdn.com/dms/image/C5603AQHQUBmlUQ5ilw/profile-displayphoto-shrink_100_100/0/1631487594657?e=1687392000&amp;v=beta&amp;t=Wdzxv9SiewOONMnCYaRWsrErnw_Ruutt7UdIJOoy1sY",
+    "bio": "Experienced in managing, designing, reviewing designs, maintaining applications, making recommendations, training less experienced engineers, solving technical issues, minimizing risks, and ensuring tasks are completed on time. Possesses excellent programming skills, leadership, project management, attention to detail, strong communication and interpersonal abilities, and problem-solving orientation.",
+    "contactmessage": "Do not hesitate to contact me anytime",
+    "email": "samayoub@outlook.com",
+    "phone": "000-000-5665",
+    "github": "https://github.com/ddkits",
+    "project": "https://github.com/ddkits",
+    "address": {
+      "street": "Magnolia Cir",
+      "city": "San Diego",
+      "state": "San Diego",
+      "zip": "***81"
+    },
+    "website": "http://www.ddkits.com",
+    "resumedownload": "/assets/Sam_Ayoub-SD_CA.docx",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/samelayyoub",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/melayyoub",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Leadership/Management/Technical Skills",
+    "education": [
+      {
+        "school": "DeVry University",
+        "degree": "Master's Degree in General Business Administration and Management",
+        "graduated": "2013 - 2014",
+        "description": ""
+      },
+      {
+        "school": "New York Institute of Technology",
+        "degree": "Bachelor's Degree in Computer Science",
+        "graduated": "2008 - 2012",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Silicon Valley Bank, USA",
+        "title": "Sr. Principal Software Engineer - API Tech Lead / UI/X Architect",
+        "years": "Sep 2022 - Present",
+        "description": ""
+      },
+      {
+        "company": "Silicon Valley Bank, USA",
+        "title": "Principal Software Engineer - API Tech Experience Lead",
+        "years": "Jul 2020 - Sep 2022",
+        "description": ""
+      },
+      {
+        "company": "Achieve Internet, USA",
+        "title": "Software Architect",
+        "years": "Mar 2019 - Mar 2020",
+        "description": ""
+      },
+      {
+        "company": "Aira, USA",
+        "title": "Senior Lead Software Engineer",
+        "years": "Nov 2017 - Dec 2018",
+        "description": ""
+      },
+      {
+        "company": "Outsell inc, USA",
+        "title": "Senior Lead Developer / Senior Software Engineer",
+        "years": "Dec 2015 - Apr 2018",
+        "description": ""
+      },
+      {
+        "company": "RUCKUS Networks, USA",
+        "title": "Senior PHP Developer",
+        "years": "Mar 2015 - Oct 2015",
+        "description": ""
+      },
+      {
+        "company": "Platinum Enterprise Solutions, Inc., USA",
+        "title": "Senior Web Developer",
+        "years": "Dec 2014 - Mar 2015",
+        "description": ""
+      },
+      {
+        "company": "VirginFields, USA",
+        "title": "IT Manager",
+        "years": "Sep 2012 - Dec 2014",
+        "description": ""
+      },
+      {
+        "company": "New York Institute of Technology, Jordan",
+        "title": "IT Technical Web Support",
+        "years": "Jan 2010 - Mar 2012",
+        "description": ""
+      },
+      {
+        "company": "Omni Care Insurance, Jordan",
+        "title": "PHP Developer",
+        "years": "Jan 2007 - Dec 2009",
+        "description": ""
+      },
+      {
+        "company": "BMC, Jordan",
+        "title": "IT Technical Support",
+        "years": "Jan 2003 - Dec 2006",
+        "description": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "Leadership",
+        "level": "98%"
+      },
+      {
+        "name": "API design and development using RESTful APIs, SOAP APIs, and GraphQL APIs",
+        "level": "90%"
+      },
+      {
+        "name": "Experience with JSON data formats and parsing",
+        "level": "90%"
+      },
+      {
+        "name": "Proficient in Bash scripting and Shell scripting for automation and task management",
+        "level": "95%"
+      },
+      {
+        "name": "CSS",
+        "level": "100%"
+      },
+      {
+        "name": "Network administration and troubleshooting including TCP/IP, DNS, DHCP, and VPN",
+        "level": "70%"
+      },
+      {
+        "name": "Integration of various systems and services using tools such as Zapier, IFTTT, and Workato",
+        "level": "90%"
+      },
+      {
+        "name": "Experience with React Native for cross-platform mobile app development",
+        "level": "90%"
+      },
+      {
+        "name": "Proficient in Figma for designing and prototyping user interfaces",
+        "level": "80%"
+      },
+      {
+        "name": "Proficient in VueJs and ReactJS for building responsive user interfaces and web applications",
+        "level": "90%"
+      },
+      {
+        "name": "Experience with NodeJS and popular frameworks such as Express and NestJS",
+        "level": "80%"
+      },
+      {
+        "name": "Experience with PHP and popular frameworks such as Laravel and Symfony",
+        "level": "90%"
+      },
+      {
+        "name": "Cloud computing experience with Amazon Web Services (AWS) and Microsoft Azure",
+        "level": "95%"
+      },
+      {
+        "name": "Experience with XML data formats and parsing",
+        "level": "90%"
+      },
+      {
+        "name": "Automation experience with tools such as Jenkins and Ansible",
+        "level": "80%"
+      },
+      {
+        "name": "Experience with Docker for containerization and container orchestration with Kube",
+        "level": "80%"
+      },
+      {
+        "name": "UX/UI design and development with a focus on creating engaging user experiences",
+        "level": "95%"
+      },
+      {
+        "name": "Management of technical teams and projects with a focus on delivering quality solutions on time and within budget",
+        "level": "80%"
+      },
+      {
+        "name": "Architectural solutions design and development with a focus on scalability and availability of systems and services",
+        "level": "85%"
+      },
+      {
+        "name": "Experience with Agile methodologies such as Scrum and Kanban",
+        "level": "80%"
+      },
+      {
+        "name": "SEO optimization for improving a website and application visibility and ranking",
+        "level": "100%"
+      },
+      {
+        "name": "Troubleshooting technical issues and providing effective solutions",
+        "level": "100%"
+      },
+      {
+        "name": "Requirements analysis and gathering for effective project planning and execution",
+        "level": "100%"
+      },
+      {
+        "name": "Atomic strategies development for efficient code and system maintenance",
+        "level": "100%"
+      },
+      {
+        "name": "Platform modularization for scalability, flexibility, and ease of maintenance",
+        "level": "90%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Real Estates Virtual World Game",
+        "category": "Gaming",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.revwgame.com"
+      },
+      {
+        "title": "API Doc Pro",
+        "category": "Portal, Async and Open API editor with UI render",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.apidocpro.com"
+      },
+      {
+        "title": "GetFreeAPI Management Platform",
+        "category": "APIM platform",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.getfreeapi.com"
+      },
+      {
+        "title": "Flying Astronaut",
+        "category": "IOS / Android game",
+        "image": "/assets/images/android.png",
+        "url": "https://www.ddkits.com"
+      },
+      {
+        "title": "DDKits CLI",
+        "category": "Docker proxy solution",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.ddkits.com"
+      },
+      {
+        "title": "AvStructure LLC",
+        "category": "Construction management platform",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.avstructure.com"
+      },
+      {
+        "title": "Flying Eagle",
+        "category": "IOS / Android game",
+        "image": "/assets/images/android.png",
+        "url": "https://www.ddkits.com"
+      },
+      {
+        "title": "Mawajez News",
+        "category": "Mawajez News - hub of all news",
+        "image": "/assets/images/webicon.png",
+        "url": "https://english.mawawjez.com"
+      },
+      {
+        "title": "Drupal Core Contributor",
+        "category": "Drupal Core Contributor",
+        "image": "/assets/images/drupal.png",
+        "url": "https://www.Drupal.org"
+      },
+      {
+        "title": "Laravel Core Contributor",
+        "category": "Laravel Core Contributor",
+        "image": "/assets/images/laravel.webp",
+        "url": "http://www.packagist.org"
+      }
+    ]
+  }
+}
