@@ -31,6 +31,95 @@
     ]
   },
   "resume": {
+    "certs": [
+      {
+        "title": "Meta Front-End Developer",
+        "source": "Meta",
+        "image": "https://media.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_100_100/0/1636138753911?e=1689811200&v=beta&t=dc0NPE1XYKyKTXHqcVlNqGfad9bA3eNFdYDgmlld9hg",
+        "url": "https://coursera.org/share/340ce23f650d2fe7556affd264be8d49"
+      },
+      {
+        "title": "Veracode Security Labs Champion Level 2",
+        "source": "Amazon Web Services (AWS)",
+        "image": "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1689811200&v=beta&t=RA70a-lnRnyHRLIHn6RHlqzyyYamTzJm1SMisBwhs-8",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/7RP2LNUGK9L6"
+      },
+      {
+        "title": "API Design and Fundamentals of Google Cloud's Apigee API Platform (with Honors)",
+        "source": "Google Cloud Education",
+        "image": "https://media.licdn.com/dms/image/C560BAQGU2cSsOBD-zw/company-logo_100_100/0/1633236804131?e=1689811200&v=beta&t=lWDH4OFYYWG6bY8yRe8NaD255VQUckX7hDz7_WSadsk",
+        "url": "https://www.coursera.org/account/accomplishments/verify/NJWHRERCFTPS"
+      },
+      {
+        "title": "Advanced react",
+        "source": "Meta",
+        "image": "https://media.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_100_100/0/1636138753911?e=1689811200&v=beta&t=dc0NPE1XYKyKTXHqcVlNqGfad9bA3eNFdYDgmlld9hg",
+        "url": "https://coursera.org/share/43cb02e0f4347a353e40494b1ef36c05"
+      },
+
+      {
+        "title": "AWS Fundamentals: Building Serverless Applications",
+        "source": "Amazon Web Services (AWS)",
+        "image": "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1689811200&v=beta&t=RA70a-lnRnyHRLIHn6RHlqzyyYamTzJm1SMisBwhs-8",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/FU8D7TUPX32E"
+      },
+      {
+        "title": "AWS Fundamentals: Going Cloud-Native",
+        "source": "Amazon Web Services (AWS)",
+        "image": "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1689811200&v=beta&t=RA70a-lnRnyHRLIHn6RHlqzyyYamTzJm1SMisBwhs-8",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/6DGUUK9Q2QCW"
+      },
+      {
+        "title": "AWS Fundamentals: Migrating to the Cloud",
+        "source": "Amazon Web Services (AWS)",
+        "image": "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1689811200&v=beta&t=RA70a-lnRnyHRLIHn6RHlqzyyYamTzJm1SMisBwhs-8",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/XNHHN4G2CWRG"
+      },
+      {
+        "title": "Continuous Delivery & DevOps",
+        "source": "University of Virginia",
+        "image": "https://media.licdn.com/dms/image/C4E0BAQEAOh2Qs3LELA/company-logo_100_100/0/1673812558884?e=1689811200&v=beta&t=4QClc_6VPedMPhHL07rP3SFu9bM_hc_9AlDUWWmoV7o",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/CFD5TH38WDDX"
+      },
+      {
+        "title": "Veracode Security Labs Champion Level 2",
+        "source": "Veracode",
+        "image": "https://media.licdn.com/dms/image/C4D0BAQHp3SSrVppKrQ/company-logo_100_100/0/1642626942559?e=1689811200&v=beta&t=j7PcckKY48aU7vEeiHM7KMRNIE5fsMmKDti3XCdubTw",
+        "url": "https://securitylabs.veracode.com/certificate/1e09b3d0b2"
+      },
+      {
+        "title": "AWS Certified Solutions Architect Associate",
+        "source": "Amazon Web Services (AWS)",
+        "image": "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1689811200&v=beta&t=RA70a-lnRnyHRLIHn6RHlqzyyYamTzJm1SMisBwhs-8",
+        "url": "https://www.whizlabs.com/learn/redirect-from-report-share/153"
+      },
+      {
+        "title": "Docker Certified Associate",
+        "source": "Whizlabs",
+        "image": "https://media.licdn.com/dms/image/C4D0BAQHp3SSrVppKrQ/company-logo_100_100/0/1642626942559?e=1689811200&v=beta&t=j7PcckKY48aU7vEeiHM7KMRNIE5fsMmKDti3XCdubTw",
+        "url": "https://www.whizlabs.com/learn/redirect-from-report-share/261"
+      },
+      {
+        "title": "Essential Cloud Infrastructure: Core Services",
+        "source": "Google Cloud Education",
+        "image": "https://media.licdn.com/dms/image/C560BAQGU2cSsOBD-zw/company-logo_100_100/0/1633236804131?e=1689811200&v=beta&t=lWDH4OFYYWG6bY8yRe8NaD255VQUckX7hDz7_WSadsk",
+        "url": "https://www.coursera.org/account/accomplishments/verify/G929SZ87ZVEC"
+      },
+
+      {
+        "title": "Essential Cloud Infrastructure: Core Services",
+        "source": "Google Cloud Education",
+        "image": "https://media.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_100_100/0/1636138753911?e=1689811200&v=beta&t=dc0NPE1XYKyKTXHqcVlNqGfad9bA3eNFdYDgmlld9hg",
+        "url": "https://www.coursera.org/account/accomplishments/verify/G929SZ87ZVEC"
+      },
+
+      {
+        "title": "React Certificate",
+        "source": "HackerRank",
+        "image": "https://media.licdn.com/dms/image/C4D0BAQHYemd2p7TxeQ/company-logo_100_100/0/1673333565608?e=1689811200&v=beta&t=p8mc3bRTBloimLkeTBdyq3Sgy7cjJqYR_oNb1sYiRnQ",
+        "url": "https://www.hackerrank.com/certificates/c490c4689724"
+      }
+    ],
     "skillmessage": "Leadership/Management/Technical Skills",
     "education": [
       {
