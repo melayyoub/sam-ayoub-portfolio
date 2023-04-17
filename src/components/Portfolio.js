@@ -1,3 +1,11 @@
+/**
+ * Portfolio, show your resume in different way
+ * Built by Sam Ayoub, Reallexi.com
+ * https://github.com/melayyoub
+ * https://sam.reallexi.com
+ * Important: To use this code please leave the copyright in place
+ * Reallexi LLC, https://reallexi.com
+ */
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import Zmage from 'react-zmage';

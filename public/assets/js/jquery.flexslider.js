@@ -752,10 +752,8 @@
               methods.pauseInvisible.visProp.replace(/[H|h]idden/, '') + 'visibilitychange';
             document.addEventListener(evtname, function () {
               if (methods.pauseInvisible.isHidden()) {
-                if (slider.startTimeout)
-                  clearTimeout(
-                    slider.startTimeout
-                  ); //If clock is ticking, stop timer and prevent from starting while invisible
+                if (slider.startTimeout) clearTimeout(slider.startTimeout);
+                //If clock is ticking, stop timer and prevent from starting while invisible
                 else slider.pause(); //Or just pause
               } else {
                 if (slider.started) slider.play(); //Initiated before, just play
