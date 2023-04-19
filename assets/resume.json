@@ -207,7 +207,7 @@
       {
         "value": "Technical",
         "count": "30",
-        "description": "20+ years specialized knowledge and expertise required to perform specific tasks and use specific tools and programs in real world situations"
+        "description": "20+ years, Specialized knowledge and having the expertise required to perform specific tasks and use specific tools and programs"
       },
       {
         "value": "Computer Science",
@@ -217,32 +217,22 @@
       {
         "value": "Innovation",
         "count": "30",
-        "description": "20+ years of ideation and collaboration while also providing an organized selection process"
+        "description": "20+ years, Ideation and collaboration while also providing an organized selection process"
       },
       {
         "value": "Software Engineering",
         "count": "30",
-        "description": "20+ years, deals with the design, development, testing, and maintenance of software applications"
+        "description": "20+ years, Deals with the design, development, testing, and maintenance of software applications"
       },
       {
         "value": "Software Development",
         "count": "30",
-        "description": "20+ years, dedicated to the process of creating, designing, deploying and supporting software"
+        "description": "20+ years, Dedicated to the process of creating, designing, deploying and supporting software"
       },
       {
         "value": "Architecture Design",
         "count": "30",
         "description": "12+ years, Architectural solutions design and development with a focus on scalability and availability of systems and services"
-      },
-      {
-        "value": "Collaboration",
-        "count": "30",
-        "description": "20+ years leading teams and projects"
-      },
-      {
-        "value": "Amazon Web Services",
-        "count": "30",
-        "description": "10+ years"
       },
       {
         "value": "Java",
@@ -297,7 +287,7 @@
       {
         "value": "DevOps",
         "count": "50",
-        "description": "10+ years, working on the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity"
+        "description": "10+ years, Working on the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity"
       },
       {
         "value": "Clouds",
@@ -307,7 +297,7 @@
       {
         "value": "Apigee",
         "count": "50",
-        "description": "8+ years, building prxies and products using Apigee OnPrem and cloud"
+        "description": "8+ years, Building prxies and products using Apigee OnPrem and cloud"
       },
       {
         "value": "Laravel",
@@ -377,17 +367,17 @@
       {
         "value": "Kubernete",
         "count": "50",
-        "description": "5+ years, building multiple nodepools using GCP and Kube local to help avoiding expenses and microservices"
+        "description": "5+ years, Building multiple nodepools using GCP and Kube local to help avoiding expenses and microservices"
       },
       {
         "value": "SASS/SCSS",
         "count": "50",
-        "description": "15+ years, minifiying and structing atoms using Scss"
+        "description": "15+ years, Expertise in CSS-superset and preprocessor"
       },
       {
         "value": "Webpack",
         "count": "50",
-        "description": "15+ years, using webpack for different UI and local developments"
+        "description": "15+ years, Using webpack for different UI and local developments"
       },
       {
         "value": "Vision",
@@ -497,7 +487,7 @@
       {
         "value": "Drupal",
         "count": "50",
-        "description": "22+ years, using CMSs especially Drupal 4,5,6,7,8,9,10 for different clients"
+        "description": "22+ years, Developer, Contributor and Themer"
       }
     ],
     "objectives": [
