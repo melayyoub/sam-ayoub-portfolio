@@ -206,227 +206,298 @@
     "skills": [
       {
         "value": "Technical",
-        "count": "30"
+        "count": "30",
+        "description": "20+ years specialized knowledge and expertise required to perform specific tasks and use specific tools and programs in real world situations"
       },
       {
         "value": "Computer Science",
-        "count": "30"
+        "count": "30",
+        "description": "Bachelor Degree"
       },
       {
         "value": "Innovation",
-        "count": "30"
+        "count": "30",
+        "description": "20+ years of ideation and collaboration while also providing an organized selection process"
       },
       {
         "value": "Software Engineering",
-        "count": "30"
+        "count": "30",
+        "description": "20+ years, deals with the design, development, testing, and maintenance of software applications"
       },
       {
         "value": "Software Development",
-        "count": "30"
+        "count": "30",
+        "description": "20+ years, dedicated to the process of creating, designing, deploying and supporting software"
       },
       {
         "value": "Architecture Design",
-        "count": "30"
+        "count": "30",
+        "description": "12+ years, Architectural solutions design and development with a focus on scalability and availability of systems and services"
       },
       {
         "value": "Collaboration",
-        "count": "30"
+        "count": "30",
+        "description": "20+ years leading teams and projects"
       },
       {
         "value": "Amazon Web Services",
-        "count": "30"
+        "count": "30",
+        "description": "10+ years"
       },
       {
         "value": "Java",
-        "count": "30"
+        "count": "30",
+        "description": "7+ years, Springboot, React Java, etc"
       },
       {
         "value": "JavaScript",
-        "count": "30"
+        "count": "30",
+        "description": "20+ years, IDEs and Editors like Vscode."
       },
       {
         "value": "Git",
-        "count": "30"
-      },
-      {
-        "value": "Java",
-        "count": "30"
-      },
-      {
-        "value": "Database",
-        "count": "30"
+        "count": "30",
+        "description": "10+ years, Github, gitlab, bitbucket, etc"
       },
       {
         "value": "SQL",
-        "count": "30"
-      },
-      {
-        "value": "AngularJS",
-        "count": "30"
-      },
-      {
-        "value": "Software Engineering",
-        "count": "30"
-      },
-      {
-        "value": "HTML",
-        "count": "50"
-      },
-      {
-        "value": "Technical",
-        "count": "50"
-      },
-      {
-        "value": "MySQL",
-        "count": "50"
-      },
-      {
-        "value": "Mentoring",
-        "count": "50"
-      },
-      {
-        "value": "DevOps",
-        "count": "50"
-      },
-      {
-        "value": "Google Cloud",
-        "count": "50"
-      },
-      {
-        "value": "Laravel",
-        "count": "50"
-      },
-      {
-        "value": "PHP",
-        "count": "50"
+        "count": "30",
+        "description": "20+ years, SQL base DB, mysql, mariadb, postgres, sqlite, etc"
       },
       {
         "value": "NoSQL",
-        "count": "50"
+        "count": "30",
+        "description": "12+ years, SQL base DB,Mango DB, Cassandra, etc"
+      },
+      {
+        "value": "Splunk",
+        "count": "30",
+        "description": "5+ years, SQL base DB,Mango DB, Cassandra, etc"
+      },
+      {
+        "value": "AngularJS",
+        "count": "30",
+        "description": "3+ years, Angular 1, 2"
+      },
+      {
+        "value": "HTML",
+        "count": "50",
+        "description": "20+ years, HTML/HTML5"
+      },
+      {
+        "value": "Technical solutions",
+        "count": "50",
+        "description": "20+ years, Provide two or more solutions not just one."
+      },
+      {
+        "value": "Mentoring",
+        "count": "50",
+        "description": "15+ years, Traditional One-on-one Mentoring, Distance Mentoring, and Group Mentoring"
+      },
+      {
+        "value": "DevOps",
+        "count": "50",
+        "description": "10+ years, working on the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity"
+      },
+      {
+        "value": "Clouds",
+        "count": "50",
+        "description": "8+ years, Cloud computing experience with Amazon Web Services (AWS), Google Cloud (GCP), and Microsoft Azure"
+      },
+      {
+        "value": "Apigee",
+        "count": "50",
+        "description": "8+ years, building prxies and products using Apigee OnPrem and cloud"
+      },
+      {
+        "value": "Laravel",
+        "count": "50",
+        "description": "12+ years, Laravel contributor and developer"
+      },
+      {
+        "value": "PHP",
+        "count": "50",
+        "description": "20+ years, Experience with PHP and popular frameworks such as Laravel and Symfony, PHP 5,6,7,8"
+      },
+      {
+        "value": "XML",
+        "count": "50",
+        "description": "20+ years, Experience with XML data formats and parsing"
       },
       {
         "value": "Leadership",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, Management of technical teams and projects with a focus on delivering quality solutions on time and within budget, and planning overall engineering strategies. Also, Providing expert advice to other engineers"
       },
       {
-        "value": "Managing",
-        "count": "50"
+        "value": "Management",
+        "count": "50",
+        "description": "10+ years, Managing engineering departments, creating and managing engineering budgets"
+      },
+      {
+        "value": "SEO",
+        "count": "50",
+        "description": "15+ years, SEO optimization for improving a website and application visibility and ranking"
       },
       {
         "value": "UX/UI",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, UX/UI design and development with a focus on creating engaging user experiences, and presenting design and research to customers, "
       },
       {
         "value": "Modernization",
-        "count": "50"
+        "count": "50",
+        "description": "10+ years, Implementing process improvements of applications"
       },
       {
         "value": "CSS",
-        "count": "50"
+        "count": "50",
+        "description": "20+ years, CSS/CSS3"
       },
       {
         "value": "NodeJS",
-        "count": "50"
+        "count": "50",
+        "description": "10+ years, Experience with NodeJS and popular frameworks such as Express and NestJS"
       },
       {
-        "value": "React",
-        "count": "50"
+        "value": "ReactJS/VueJS",
+        "count": "50",
+        "description": "10+ years, Proficient in VueJs and ReactJS for building responsive user interfaces and web applications"
       },
       {
         "value": "Zend",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, Experience with PHP and popular frameworks such as Laravel and Symfony"
       },
       {
         "value": "Docker",
-        "count": "50"
+        "count": "50",
+        "description": "12+ years, Experience with Docker for containerization and container orchestration with Kube"
       },
       {
         "value": "Kubernete",
-        "count": "50"
-      },
-      {
-        "value": "CSS",
-        "count": "50"
+        "count": "50",
+        "description": "5+ years, building multiple nodepools using GCP and Kube local to help avoiding expenses and microservices"
       },
       {
         "value": "SASS/SCSS",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, minifiying and structing atoms using Scss"
       },
       {
-        "value": "Clarity",
-        "count": "50"
+        "value": "Webpack",
+        "count": "50",
+        "description": "15+ years, using webpack for different UI and local developments"
       },
       {
         "value": "Vision",
-        "count": "50"
+        "count": "50",
+        "description": "Solving problems, and furture features is my priority when architecting or building a project."
       },
       {
-        "value": "Priority",
-        "count": "50"
+        "value": "Modulization and Modernization",
+        "count": "50",
+        "description": "8+ years, Platform modularization for scalability, flexibility, and ease of maintenance"
       },
       {
         "value": "JQuery",
-        "count": "50"
+        "count": "50",
+        "description": "20+ years, using JQuery with different applications and CMSs"
       },
       {
-        "value": "Positivity",
-        "count": "50"
+        "value": "JSON",
+        "count": "50",
+        "description": "12+ years, Experience with JSON data formats and parsing"
+      },
+      {
+        "value": "YAML",
+        "count": "50",
+        "description": "12+ years, Experience with YAML data formats and parsing"
       },
       {
         "value": "Bash",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, Proficient in Bash scripting and Shell scripting for automation and task management"
       },
       {
         "value": "Shell",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, using shell scripts "
       },
       {
         "value": "Automation",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, Automation experience with tools such as Jenkins and Ansible"
       },
       {
         "value": "API",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, of APIs experience"
       },
       {
         "value": "Restful",
-        "count": "50"
+        "count": "50",
+        "description": "10+ years, experienced in all kinds of Restful services, from one API to multiple"
+      },
+      {
+        "value": "GraphQL",
+        "count": "50",
+        "description": "10+ years, experienced in all kinds of Restful services, from one API to multiple using GraphQL to solve multi sources responses"
       },
       {
         "value": "AsyncAPI",
-        "count": "50"
+        "count": "50",
+        "description": "6+ years of Kafka and AsyncAPI specifications"
       },
       {
         "value": "Open-source",
-        "count": "50"
+        "count": "50",
+        "description": "DDKits, APIdocPro UI render are basicly founded and built my me alone before any other contributor."
       },
       {
         "value": "Gaming",
-        "count": "50"
+        "count": "50",
+        "description": "10+ years, developing games using androind, web and IOS for personal usage"
       },
       {
-        "value": "Architecture Design",
-        "count": "50"
+        "value": "Micro-services",
+        "count": "50",
+        "description": "15+ years, of building projects and architecting them using microservices structure"
       },
       {
-        "value": "Solutions",
-        "count": "50"
+        "value": "Solution Architect",
+        "count": "50",
+        "description": "15+ years, Architectural solutions design and development with a focus on scalability and availability of systems and services"
+      },
+      {
+        "value": "Agile/Scrum",
+        "count": "50",
+        "description": "15+ years, Experience with Agile methodologies such as Scrum and Kanban"
       },
       {
         "value": "Troubleshoot",
-        "count": "50"
+        "count": "50",
+        "description": "20+ years, Troubleshooting technical issues and providing effective solutions"
       },
       {
         "value": "OpenApi",
-        "count": "50"
+        "count": "50",
+        "description": "Swagger, OpenAPI and AsyncAPI"
       },
       {
         "value": "Analysis",
-        "count": "50"
+        "count": "50",
+        "description": "15+ years, Requirements analysis and gathering for effective project planning and execution"
       },
       {
         "value": "Linux",
-        "count": "50"
+        "count": "50",
+        "description": "20+ years"
+      },
+      {
+        "value": "Drupal",
+        "count": "50",
+        "description": "22+ years, using CMSs especially Drupal 4,5,6,7,8,9,10 for different clients"
       }
     ],
     "objectives": [
@@ -469,10 +540,6 @@
       {
         "name": "Network administration and troubleshooting including TCP/IP, DNS, DHCP, and VPN",
         "level": "70%"
-      },
-      {
-        "name": "Integration of various systems and services using tools such as Zapier, IFTTT, and Workato",
-        "level": "90%"
       },
       {
         "name": "Experience with React Native for cross-platform mobile app development",

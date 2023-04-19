@@ -13,9 +13,9 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
-import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 export default function App() {
   const [resumeData, setresumeData] = useState([]);
@@ -31,12 +31,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header data={resumeData.main} />
-      <About data={resumeData.main} />
-      <Resume data={resumeData.resume} />
-      <Portfolio data={resumeData.portfolio} />
-      <Contact data={resumeData.main} />
-      <Footer data={resumeData.main} />
+      {resumeData.main ? <Header data={resumeData.main} /> : []}
+      {resumeData.main ? <About data={resumeData.main} /> : []}
+      {resumeData.resume ? <Resume data={resumeData.resume} /> : []}
+      {resumeData.portfolio ? <Portfolio data={resumeData.portfolio} /> : []}
+      {resumeData.main ? <Contact data={resumeData.main} /> : []}
+      {resumeData.main ? <Footer data={resumeData.main} /> : []}
     </div>
   );
 }
