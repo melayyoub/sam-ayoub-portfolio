@@ -63,6 +63,7 @@
     "react-multi-carousel": "^2.8.3",
     "react-scripts": "^5",
     "react-scroll": "^1",
+    "react-tagcloud": "^2.3.1",
     "react-zmage": "^0.8.5-beta.36",
     "sass": "^1.62.0",
     "styled-components": "^5.3.9",

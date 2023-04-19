@@ -2377,6 +2377,10 @@ ul#nav li.current a {
 /*	Skill Bars
 /*----------------------------------------------*/
 
+.skillsItems:nth-child(odd){
+  background-color: #ccc;
+  color: black;
+}
 .bars {
   width: 95%;
   float: left;

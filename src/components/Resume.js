@@ -10,6 +10,8 @@
 import React, { Component } from 'react';
 import Carousel from 'react-multi-carousel';
 import Zmage from 'react-zmage';
+import { TagCloud } from 'react-tagcloud';
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -41,8 +43,8 @@ class Resume extends Component {
 
   render() {
     if (!this.props.data) return null;
-
     const skillmessage = this.props.data.skillmessage;
+    const skills = this.props.data.skills;
     const education = this.props.data.education.map(function (education) {
       return (
         <div key={education.school}>
@@ -69,19 +71,30 @@ class Resume extends Component {
       );
     });
 
-    const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = 'bar-expand  border' + skills.name.toLowerCase();
-      const width = skills.level;
+    // const objectives = this.props.data.objectives.map((skills) => {
+    //   const backgroundColor = this.getRandomColor();
+    //   const className = 'bar-expand  border' + skills.name.toLowerCase();
+    //   const width = skills.level;
+
+    //   return (
+    //     <li key={skills.name} className="col-6">
+    //       <div style={{ width, backgroundColor }} className={className}>
+    //         <div className="p-2 text-dark ">{width}</div>
+    //       </div>
+    //       <em className="text-dark" style={{ fontSize: '10px' }}>
+    //         {skills.name}
+    //       </em>
+    //     </li>
+    //   );
+    // });
+    const objectives = this.props.data.objectives.map((skills) => {
+      //   const backgroundColor = this.getRandomColor();
+      //   const className = 'bar-expand  border' + skills.name.toLowerCase();
+      //   const width = skills.level;
 
       return (
-        <li key={skills.name}>
-          <div style={{ width, backgroundColor }} className={className}>
-            <div className="p-2 text-dark ">{width}</div>
-          </div>
-          <em className="text-dark" style={{ fontSize: '10px' }}>
-            {skills.name}
-          </em>
+        <li key={skills.name} className="skillsItems">
+          {skills.name}
         </li>
       );
     });
@@ -100,6 +113,24 @@ class Resume extends Component {
     });
     return (
       <section id="resume">
+        <div>
+          <div className="row education">
+            <div className="three columns header-col">
+              <h1>
+                <span>Skills</span>
+              </h1>
+            </div>
+
+            <div className="nine  columns main-col">
+              <TagCloud
+                minSize={12}
+                maxSize={35}
+                tags={skills}
+                onClick={(tag) => alert(`'${tag.value}' was selected!`)}
+              />
+            </div>
+          </div>
+        </div>
         <div>
           <div className="row education">
             <div className="three columns header-col">
@@ -139,19 +170,19 @@ class Resume extends Component {
         </div>
 
         <div>
-          <div className="row skill">
+          <div className="row skills">
             <div className="three columns header-col">
               <h1>
-                <span>Skills</span>
+                <span>Objectives</span>
               </h1>
             </div>
 
-            <div className="nine columns main-col">
+            <div className="nine  columns main-col">
               <p>{skillmessage}</p>
               <br />
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
+              {/* <div className="bars d-flex"> */}
+              <ul className="skills row text-start ">{objectives}</ul>
+              {/* </div> */}
             </div>
           </div>
         </div>

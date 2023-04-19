@@ -16,7 +16,7 @@
       "zip": "92081"
     },
     "website": "http://www.ddkits.com",
-    "resumedownload": "/assets/Sam_Ayoub-SD_CA.docx",
+    "resumedownload": "/assets/resume.docx",
     "social": [
       {
         "name": "linkedin",
@@ -205,11 +205,257 @@
     ],
     "skills": [
       {
-        "name": "Leadership",
-        "level": "98%"
+        "value": "Technical",
+        "count": "30"
       },
       {
-        "name": "API design and development using RESTful APIs, SOAP APIs, and GraphQL APIs",
+        "value": "Computer Science",
+        "count": "30"
+      },
+      {
+        "value": "Innovation",
+        "count": "30"
+      },
+      {
+        "value": "Software Engineering",
+        "count": "30"
+      },
+      {
+        "value": "Software Development",
+        "count": "30"
+      },
+      {
+        "value": "Architecture Design",
+        "count": "30"
+      },
+      {
+        "value": "Collaboration",
+        "count": "30"
+      },
+      {
+        "value": "Amazon Web Services",
+        "count": "30"
+      },
+      {
+        "value": "Java",
+        "count": "30"
+      },
+      {
+        "value": "JavaScript",
+        "count": "30"
+      },
+      {
+        "value": "Git",
+        "count": "30"
+      },
+      {
+        "value": "Java",
+        "count": "30"
+      },
+      {
+        "value": "Database",
+        "count": "30"
+      },
+      {
+        "value": "SQL",
+        "count": "30"
+      },
+      {
+        "value": "AngularJS",
+        "count": "30"
+      },
+      {
+        "value": "Software Engineering",
+        "count": "30"
+      },
+      {
+        "value": "HTML",
+        "count": "50"
+      },
+      {
+        "value": "Technical",
+        "count": "50"
+      },
+      {
+        "value": "MySQL",
+        "count": "50"
+      },
+      {
+        "value": "Mentoring",
+        "count": "50"
+      },
+      {
+        "value": "DevOps",
+        "count": "50"
+      },
+      {
+        "value": "Google Cloud",
+        "count": "50"
+      },
+      {
+        "value": "Laravel",
+        "count": "50"
+      },
+      {
+        "value": "PHP",
+        "count": "50"
+      },
+      {
+        "value": "NoSQL",
+        "count": "50"
+      },
+      {
+        "value": "Leadership",
+        "count": "50"
+      },
+      {
+        "value": "Managing",
+        "count": "50"
+      },
+      {
+        "value": "UX/UI",
+        "count": "50"
+      },
+      {
+        "value": "Modernization",
+        "count": "50"
+      },
+      {
+        "value": "CSS",
+        "count": "50"
+      },
+      {
+        "value": "NodeJS",
+        "count": "50"
+      },
+      {
+        "value": "React",
+        "count": "50"
+      },
+      {
+        "value": "Zend",
+        "count": "50"
+      },
+      {
+        "value": "Docker",
+        "count": "50"
+      },
+      {
+        "value": "Kubernete",
+        "count": "50"
+      },
+      {
+        "value": "CSS",
+        "count": "50"
+      },
+      {
+        "value": "SASS/SCSS",
+        "count": "50"
+      },
+      {
+        "value": "Clarity",
+        "count": "50"
+      },
+      {
+        "value": "Vision",
+        "count": "50"
+      },
+      {
+        "value": "Priority",
+        "count": "50"
+      },
+      {
+        "value": "JQuery",
+        "count": "50"
+      },
+      {
+        "value": "Positivity",
+        "count": "50"
+      },
+      {
+        "value": "Bash",
+        "count": "50"
+      },
+      {
+        "value": "Shell",
+        "count": "50"
+      },
+      {
+        "value": "Automation",
+        "count": "50"
+      },
+      {
+        "value": "API",
+        "count": "50"
+      },
+      {
+        "value": "Restful",
+        "count": "50"
+      },
+      {
+        "value": "AsyncAPI",
+        "count": "50"
+      },
+      {
+        "value": "Open-source",
+        "count": "50"
+      },
+      {
+        "value": "Gaming",
+        "count": "50"
+      },
+      {
+        "value": "Architecture Design",
+        "count": "50"
+      },
+      {
+        "value": "Solutions",
+        "count": "50"
+      },
+      {
+        "value": "Troubleshoot",
+        "count": "50"
+      },
+      {
+        "value": "OpenApi",
+        "count": "50"
+      },
+      {
+        "value": "Analysis",
+        "count": "50"
+      },
+      {
+        "value": "Linux",
+        "count": "50"
+      }
+    ],
+    "objectives": [
+      {
+        "name": "Managing engineering departments",
+        "level": "90%"
+      },
+      {
+        "name": "Implementing process improvements",
+        "level": "90%"
+      },
+      {
+        "name": "Planning overall engineering strategies",
+        "level": "90%"
+      },
+      {
+        "name": "Determining long-term department goals",
+        "level": "90%"
+      },
+      {
+        "name": "Providing expert advice to other engineers",
+        "level": "90%"
+      },
+      {
+        "name": "Creating and managing engineering budgets ",
+        "level": "90%"
+      },
+      {
+        "name": "Presenting design and research to customers",
         "level": "90%"
       },
       {
@@ -219,10 +465,6 @@
       {
         "name": "Proficient in Bash scripting and Shell scripting for automation and task management",
         "level": "95%"
-      },
-      {
-        "name": "CSS",
-        "level": "100%"
       },
       {
         "name": "Network administration and troubleshooting including TCP/IP, DNS, DHCP, and VPN",
