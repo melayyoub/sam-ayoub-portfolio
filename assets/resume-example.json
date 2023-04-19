@@ -1,0 +1,149 @@
+{
+  "main": {
+    "name": "Sam Ayoub",
+    "description": "Founder / Director / Senior Principal Software Architect / Senior Principal Software Engineer",
+    "image": "https://media.licdn.com/dms/image/C5603AQHQUBmlUQ5ilw/profile-displayphoto-shrink_100_100/0/1631487594657?e=1687392000&amp;v=beta&amp;t=Wdzxv9SiewOONMnCYaRWsrErnw_Ruutt7UdIJOoy1sY",
+    "bio": "Experienced in managing, designing, reviewing designs, maintaining applications, making recommendations, training less experienced engineers, solving technical issues, minimizing risks, and ensuring tasks are completed on time. Possesses excellent programming skills, leadership, project management, attention to detail, strong communication and interpersonal abilities, and problem-solving orientation.",
+    "contactmessage": "Do not hesitate to contact me anytime",
+    "email": "samsayoub@outlook.com",
+    "phone": "",
+    "github": "https://github.com/melayyoub",
+    "project": "https://github.com/ddkits",
+    "address": {
+      "street": "",
+      "city": "San Diego",
+      "state": "CA",
+      "zip": "92081"
+    },
+    "website": "http://www.ddkits.com",
+    "resumedownload": "/assets/resume.docx",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/samelayyoub",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/melayyoub",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "certs": [
+      {
+        "title": "Meta Front-End Developer",
+        "source": "Meta",
+        "image": "https://media.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_100_100/0/1636138753911?e=1689811200&v=beta&t=dc0NPE1XYKyKTXHqcVlNqGfad9bA3eNFdYDgmlld9hg",
+        "url": "https://coursera.org/share/340ce23f650d2fe7556affd264be8d49"
+      },
+      {
+        "title": "Veracode Security Labs Champion Level 2",
+        "source": "Amazon Web Services (AWS)",
+        "image": "https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1689811200&v=beta&t=RA70a-lnRnyHRLIHn6RHlqzyyYamTzJm1SMisBwhs-8",
+        "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/7RP2LNUGK9L6"
+      },
+      {
+        "title": "API Design and Fundamentals of Google Cloud's Apigee API Platform (with Honors)",
+        "source": "Google Cloud Education",
+        "image": "https://media.licdn.com/dms/image/C560BAQGU2cSsOBD-zw/company-logo_100_100/0/1633236804131?e=1689811200&v=beta&t=lWDH4OFYYWG6bY8yRe8NaD255VQUckX7hDz7_WSadsk",
+        "url": "https://www.coursera.org/account/accomplishments/verify/NJWHRERCFTPS"
+      }
+    ],
+    "skillmessage": "Leadership/Management/Technical Skills",
+    "education": [
+      {
+        "school": "DeVry University",
+        "degree": "Master's Degree in General Business Administration and Management",
+        "graduated": "2013 - 2014",
+        "description": ""
+      },
+      {
+        "school": "New York Institute of Technology",
+        "degree": "Bachelor's Degree in Computer Science",
+        "graduated": "2008 - 2012",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "Silicon Valley Bank, USA",
+        "title": "Sr. Principal Software Engineer - API Tech Lead / UI/X Architect",
+        "years": "Sep 2022 - Present",
+        "description": ""
+      },
+      {
+        "company": "Silicon Valley Bank, USA",
+        "title": "Principal Software Engineer - API Tech Experience Lead",
+        "years": "Jul 2020 - Sep 2022",
+        "description": ""
+      },
+      {
+        "company": "Achieve Internet, USA",
+        "title": "Software Architect",
+        "years": "Mar 2019 - Mar 2020",
+        "description": ""
+      }
+    ],
+    "skills": [
+      {
+        "value": "Technical",
+        "count": "30",
+        "description": "20+ years, Specialized knowledge and having the expertise required to perform specific tasks and use specific tools and programs"
+      },
+      {
+        "value": "Computer Science",
+        "count": "30",
+        "description": "Bachelor Degree"
+      },
+      {
+        "value": "Innovation",
+        "count": "30",
+        "description": "20+ years, Ideation and collaboration while also providing an organized selection process"
+      }
+    ],
+    "objectives": [
+      {
+        "name": "Managing engineering departments",
+        "level": "90%"
+      },
+      {
+        "name": "Implementing process improvements",
+        "level": "90%"
+      },
+      {
+        "name": "Planning overall engineering strategies",
+        "level": "90%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Real Estates Virtual World Game",
+        "category": "Gaming",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.revwgame.com"
+      },
+      {
+        "title": "API Doc Pro",
+        "category": "Portal, Async and Open API editor with UI render",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.apidocpro.com"
+      },
+      {
+        "title": "GetFreeAPI Management Platform",
+        "category": "APIM platform",
+        "image": "/assets/images/webicon.png",
+        "url": "https://www.getfreeapi.com"
+      },
+      {
+        "title": "Flying Astronaut",
+        "category": "IOS / Android game",
+        "image": "/assets/images/android.png",
+        "url": "https://www.ddkits.com"
+      }
+    ]
+  }
+}
