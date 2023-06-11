@@ -8,7 +8,7 @@
  */
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-import Zmage from 'react-zmage';
+// import Zmage from 'react-zmage';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 const responsive = {
@@ -40,11 +40,14 @@ class Portfolio extends Component {
       let projectImage = projects.image;
 
       return (
-        <a href={projects.url} key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: 'center' }}>{projects.title}</div>
-            <div style={{ textAlign: 'center' }}>Learn more</div>
+        <a href={projects.url} key={id++} className="cards">
+          <div className="card " style={{ textAlign: 'center' }}>
+            <div className="card-header">{projects.title}</div>
+            <div className="card-body">
+              <img alt={projects.title} src={projectImage} width={100} height={100} />
+              <div>{projects.category}</div>
+              <div>{projects.url}</div>
+            </div>
           </div>
         </a>
       );

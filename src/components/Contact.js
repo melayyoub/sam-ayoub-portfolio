@@ -24,6 +24,10 @@ class Contact extends Component {
         {name}
         <br />
         {city}, {state}
+        <br />
+        <a href={this.props.data.social[0].url} className="button">
+          LinkedIn
+        </a>
       </section>
     );
   }

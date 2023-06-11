@@ -1,9 +1,9 @@
 {
   "main": {
     "name": "Sam (Mutasem Elayyoub) Ayoub",
-    "description": "Sr. Director / Principal Software Architect / Principal Software Engineer",
+    "description": "API Architect, UI/UX Architect, Cloud/Software Solution Architect, Leadership, Managing,  MBA, CS",
     "image": "https://media.licdn.com/dms/image/C5603AQHQUBmlUQ5ilw/profile-displayphoto-shrink_100_100/0/1631487594657?e=1687392000&amp;v=beta&amp;t=Wdzxv9SiewOONMnCYaRWsrErnw_Ruutt7UdIJOoy1sY",
-    "bio": "Experienced in managing, designing, reviewing designs, maintaining applications, making recommendations, training less experienced engineers, solving technical issues, minimizing risks, and ensuring tasks are completed on time. Possesses excellent programming skills, leadership, project management, attention to detail, strong communication and interpersonal abilities, and problem-solving orientation.",
+    "bio": "Skillful Software Architect with 10+ years designing development frameworks and guidelines to expedite and enhance application engineering. Versed in numerous software categories for business and private users. Adept at constructing software architecture suited to rapid deployment across multiple projects to reduce development times and costs.",
     "contactmessage": "Do not hesitate to contact me anytime",
     "email": "samsayoub@outlook.com",
     "phone": "",
@@ -12,11 +12,12 @@
     "address": {
       "street": "",
       "city": "San Diego",
-      "state": "CA",
+      "state": "CA/USA",
       "zip": "92081"
     },
     "website": "http://www.ddkits.com",
     "resumedownload": "/assets/resume.docx",
+    "resumedownloadPdf": "/assets/resume.pdf",
     "social": [
       {
         "name": "linkedin",
@@ -26,6 +27,21 @@
       {
         "name": "github",
         "url": "https://github.com/melayyoub",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/samayoub",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/samelayyoub",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/whywebs",
         "className": "fa fa-github"
       }
     ]
@@ -152,7 +168,7 @@
         "company": "Achieve Internet, USA",
         "title": "Software Architect",
         "years": "Mar 2019 - Mar 2020",
-        "description": ""
+        "description": "Consultant and lead for Illumina, DigiCom, Grammy Award, Cubic Transportation, Apigee, Google Cloud, Platform.sh"
       },
       {
         "company": "Aira, USA",
@@ -608,6 +624,18 @@
   "portfolio": {
     "projects": [
       {
+        "title": "OpenAPI/AsyncAPI UI Custom Render",
+        "category": "Lib",
+        "image": "/assets/images/webicon.png",
+        "url": "https://ui.apidocpro.com"
+      },
+      {
+        "title": "RealLexi The Real Word",
+        "category": "Blog",
+        "image": "/assets/images/webicon.png",
+        "url": "https://reallexi.com"
+      },
+      {
         "title": "Real Estates Virtual World Game",
         "category": "Gaming",
         "image": "/assets/images/webicon.png",
@@ -617,7 +645,7 @@
         "title": "API Doc Pro, Render and Editor",
         "category": "Portal, Async and Open API editor with UI render",
         "image": "/assets/images/webicon.png",
-        "url": "https://ui.apidocpro.com"
+        "url": "https://apidocpro.com"
       },
       {
         "title": "GetFreeAPI Management Platform",
