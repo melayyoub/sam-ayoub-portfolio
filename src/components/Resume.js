@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /**
  * Portfolio, show your resume in different way
  * Built by Sam Ayoub, Reallexi.com
@@ -105,10 +106,9 @@ export default function Resume(props) {
     let certImage = cert.image;
 
     return (
-      <a href={cert.source} key={cert.title + Math.random()} className="columns portfolio-item">
+      <a href={cert.url} key={cert.title + Math.random()} className="columns portfolio-item">
         <div className="item-wrap">
-          <Zmage alt={cert.title} src={certImage} />
-          <div style={{ textAlign: 'center' }}>{cert.title}</div>
+           <div style={{ textAlign: 'center' }}>{cert.title}</div>
           <div style={{ textAlign: 'center' }}>Certification link</div>
         </div>
       </a>
