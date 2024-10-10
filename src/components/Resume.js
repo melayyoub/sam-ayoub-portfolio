@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 /**
  * Portfolio, show your resume in different way
  * Built by Sam Ayoub, Reallexi.com
@@ -10,7 +10,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
-import Zmage from 'react-zmage';
+// import Zmage from 'react-zmage';
 import { TagCloud } from 'react-tagcloud';
 
 export default function Resume(props) {
@@ -103,7 +103,7 @@ export default function Resume(props) {
     );
   });
   const certs = props.data.certs.map(function (cert) {
-    let certImage = cert.image;
+    // let certImage = cert.image;
 
     return (
       <a href={cert.url} key={cert.title + Math.random()} className="columns portfolio-item">
