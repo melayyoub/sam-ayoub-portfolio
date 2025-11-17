@@ -1,21 +1,21 @@
 {
   "main": {
-    "name": "Sam (Mutasem Elayyoub) Ayoub",
-    "description": "API Architect, UI/UX Architect, Cloud/Software Solution Architect, Leadership, Managing,  MBA, CS",
+    "name": "Sam Ayoub",
+    "description": "Software Architect & Engineering Leader / Director-level Engineering Management / FinTech, AI & SaaS",
     "image": "https://media.licdn.com/dms/image/C5603AQHQUBmlUQ5ilw/profile-displayphoto-shrink_100_100/0/1631487594657?e=1687392000&amp;v=beta&amp;t=Wdzxv9SiewOONMnCYaRWsrErnw_Ruutt7UdIJOoy1sY",
-    "bio": "Skillful Software Architect with 10+ years designing development frameworks and guidelines to expedite and enhance application engineering. Versed in numerous software categories for business and private users. Adept at constructing software architecture suited to rapid deployment across multiple projects to reduce development times and costs.",
+    "bio": "Innovative software architect and engineering leader with over 15 years of experience designing, scaling, and mentoring cross-functional teams across FinTech, AI, and SaaS industries. Expert in building high-performance API and cloud architectures on AWS, GCP, and Azure. Proven ability to lead large-scale digital transformations, optimize performance, and bridge business strategy with cutting-edge technology execution. Passionate about driving engineering excellence, fostering collaboration, and delivering scalable, secure, and user-centric systems.",
     "contactmessage": "Do not hesitate to contact me anytime",
     "email": "samsayoub@outlook.com",
-    "phone": "",
+    "phone": "+1 352-575-5665",
     "github": "https://github.com/ddkits",
     "project": "https://github.com/ddkits",
     "address": {
       "street": "",
-      "city": "San Diego",
-      "state": "CA/USA",
-      "zip": "92081"
+      "city": "Cary",
+      "state": "NC/USA",
+      "zip": ""
     },
-    "website": "http://www.ddkits.com",
+    "website": "https://sam.reallexi.com",
     "resumedownload": "/assets/resume.docx",
     "resumedownloadPdf": "/assets/resume.pdf",
     "social": [
@@ -72,7 +72,6 @@
         "image": "https://media.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_100_100/0/1636138753911?e=1689811200&v=beta&t=dc0NPE1XYKyKTXHqcVlNqGfad9bA3eNFdYDgmlld9hg",
         "url": "https://coursera.org/share/43cb02e0f4347a353e40494b1ef36c05"
       },
-
       {
         "title": "AWS Fundamentals: Building Serverless Applications",
         "source": "Amazon Web Services (AWS)",
@@ -121,14 +120,12 @@
         "image": "https://media.licdn.com/dms/image/C560BAQGU2cSsOBD-zw/company-logo_100_100/0/1633236804131?e=1689811200&v=beta&t=lWDH4OFYYWG6bY8yRe8NaD255VQUckX7hDz7_WSadsk",
         "url": "https://www.coursera.org/account/accomplishments/verify/G929SZ87ZVEC"
       },
-
       {
         "title": "Essential Cloud Infrastructure: Core Services",
         "source": "Google Cloud Education",
         "image": "https://media.licdn.com/dms/image/C4E0BAQFdNatYGiBelg/company-logo_100_100/0/1636138753911?e=1689811200&v=beta&t=dc0NPE1XYKyKTXHqcVlNqGfad9bA3eNFdYDgmlld9hg",
         "url": "https://www.coursera.org/account/accomplishments/verify/G929SZ87ZVEC"
       },
-
       {
         "title": "React Certificate",
         "source": "HackerRank",
@@ -136,87 +133,51 @@
         "url": "https://www.hackerrank.com/certificates/c490c4689724"
       }
     ],
-    "skillmessage": "Leadership/Management/Technical Skills",
+    "skillmessage": "I focus on leading high-performing engineering organizations, modernizing platforms, and mentoring teams while keeping security, scalability, and user experience at the core of every decision.",
     "education": [
       {
-        "school": "DeVry University",
-        "degree": "Master's Degree in General Business Administration and Management",
-        "graduated": "2013 - 2014",
-        "description": ""
+        "school": "Keller Graduate School of Management",
+        "degree": "MBA, Management",
+        "graduated": "2014",
+        "description": "Focused on leadership, organizational strategy, and technology-driven business transformation."
       },
       {
         "school": "New York Institute of Technology",
-        "degree": "Bachelor's Degree in Computer Science",
-        "graduated": "2008 - 2012",
-        "description": ""
+        "degree": "Bachelor of Science, Computer Science",
+        "graduated": "2012",
+        "description": "Emphasis on software engineering, distributed systems, and database design."
       }
     ],
     "work": [
       {
-        "company": "Silicon Valley Bank, USA",
-        "title": "Sr. Principal Software Engineer - API Tech Lead / UI/X Architect",
-        "years": "Sep 2022 - Present",
-        "description": ""
+        "company": "First Citizens Bank, North Carolina",
+        "title": "Software Architect Consultant",
+        "years": "Apr 2023 \u2013 Present",
+        "description": "Leading enterprise-wide consulting for scalable API and cloud modernization initiatives across the FinTech platform. Advising on API governance, developer experience, and DevOps automation using GitLab CI/CD while partnering with leadership on hybrid AWS/Azure cloud migration strategies."
       },
       {
-        "company": "Silicon Valley Bank, USA",
-        "title": "Principal Software Engineer - API Tech Experience Lead",
-        "years": "Jul 2020 - Sep 2022",
-        "description": ""
+        "company": "Silicon Valley Bank, San Diego",
+        "title": "Senior Principal Software Architect",
+        "years": "Jul 2020 \u2013 Apr 2023",
+        "description": "Architected and implemented scalable API frameworks, reducing operational downtime by 30%. Directed multi-functional teams through enterprise platform modernization and introduced API specification standards that improved internal and external developer collaboration."
       },
       {
-        "company": "Achieve Internet, USA",
-        "title": "Software Architect",
-        "years": "Mar 2019 - Mar 2020",
-        "description": "Consultant and lead for Illumina, DigiCom, Grammy Award, Cubic Transportation, Apigee, Google Cloud, Platform.sh"
+        "company": "Achieve Internet, San Diego",
+        "title": "Senior Lead Engineer",
+        "years": "Mar 2019 \u2013 Mar 2020",
+        "description": "Oversaw architecture and DevOps automation for API-driven enterprise applications across AWS, GCP, and Azure. Directed cloud security and multi-tenant compliance programs while streamlining CI/CD pipelines to improve release efficiency by 35%."
       },
       {
-        "company": "Aira, USA",
-        "title": "Senior Lead Software Engineer",
-        "years": "Nov 2017 - Dec 2018",
-        "description": ""
+        "company": "Aira, San Diego",
+        "title": "Senior Software Engineer",
+        "years": "May 2017 \u2013 Dec 2018",
+        "description": "Automated the development lifecycle with Jenkins and CircleCI, cutting manual deployment effort by 60%. Delivered scalable API integrations that supported accessibility innovations for visually impaired users and collaborated with Marketing on SEO initiatives that increased web traffic by 20%."
       },
       {
-        "company": "Outsell inc, USA",
-        "title": "Senior Lead Developer / Senior Software Engineer",
-        "years": "Dec 2015 - Apr 2018",
-        "description": ""
-      },
-      {
-        "company": "RUCKUS Networks, USA",
-        "title": "Senior PHP Developer",
-        "years": "Mar 2015 - Oct 2015",
-        "description": ""
-      },
-      {
-        "company": "Platinum Enterprise Solutions, Inc., USA",
-        "title": "Senior Web Developer",
-        "years": "Dec 2014 - Mar 2015",
-        "description": ""
-      },
-      {
-        "company": "VirginFields, USA",
-        "title": "IT Manager",
-        "years": "Sep 2012 - Dec 2014",
-        "description": ""
-      },
-      {
-        "company": "New York Institute of Technology, Jordan",
-        "title": "IT Technical Web Support",
-        "years": "Jan 2010 - Mar 2012",
-        "description": ""
-      },
-      {
-        "company": "Omni Care Insurance, Jordan",
-        "title": "PHP Developer",
-        "years": "Jan 2007 - Dec 2009",
-        "description": ""
-      },
-      {
-        "company": "BMC, Jordan",
-        "title": "IT Technical Support",
-        "years": "Jan 2003 - Dec 2006",
-        "description": ""
+        "company": "Outsell Inc., Burlingame",
+        "title": "Senior Lead Developer",
+        "years": "Dec 2015 \u2013 Apr 2018",
+        "description": "Led global development of the Outsell OSdata platform serving over 10 million companies with real-time analytics. Designed and deployed SSO authentication systems and coordinated remote engineering teams across time zones to consistently achieve on-time delivery."
       }
     ],
     "skills": [
@@ -508,115 +469,27 @@
     ],
     "objectives": [
       {
-        "name": "Managing engineering departments",
+        "name": "Directing large-scale API and cloud modernization initiatives that improve scalability and time-to-market.",
         "level": "90%"
       },
       {
-        "name": "Implementing process improvements",
+        "name": "Leading cross-functional engineering teams across FinTech, AI, and SaaS products.",
         "level": "90%"
       },
       {
-        "name": "Planning overall engineering strategies",
+        "name": "Championing modular UI/UX architecture and design systems for consistent, maintainable experiences.",
         "level": "90%"
       },
       {
-        "name": "Determining long-term department goals",
+        "name": "Mentoring engineers into senior roles and fostering a culture of knowledge sharing and excellence.",
         "level": "90%"
       },
       {
-        "name": "Providing expert advice to other engineers",
+        "name": "Partnering with executive leadership to align technical roadmaps with product vision and regulatory strategy.",
         "level": "90%"
       },
       {
-        "name": "Creating and managing engineering budgets ",
-        "level": "90%"
-      },
-      {
-        "name": "Presenting design and research to customers",
-        "level": "90%"
-      },
-      {
-        "name": "Experience with JSON data formats and parsing",
-        "level": "90%"
-      },
-      {
-        "name": "Proficient in Bash scripting and Shell scripting for automation and task management",
-        "level": "95%"
-      },
-      {
-        "name": "Network administration and troubleshooting including TCP/IP, DNS, DHCP, and VPN",
-        "level": "70%"
-      },
-      {
-        "name": "Experience with React Native for cross-platform mobile app development",
-        "level": "90%"
-      },
-      {
-        "name": "Proficient in Figma for designing and prototyping user interfaces",
-        "level": "80%"
-      },
-      {
-        "name": "Proficient in VueJs and ReactJS for building responsive user interfaces and web applications",
-        "level": "90%"
-      },
-      {
-        "name": "Experience with NodeJS and popular frameworks such as Express and NestJS",
-        "level": "80%"
-      },
-      {
-        "name": "Experience with PHP and popular frameworks such as Laravel and Symfony",
-        "level": "90%"
-      },
-      {
-        "name": "Cloud computing experience with Amazon Web Services (AWS) and Microsoft Azure",
-        "level": "95%"
-      },
-      {
-        "name": "Experience with XML data formats and parsing",
-        "level": "90%"
-      },
-      {
-        "name": "Automation experience with tools such as Jenkins and Ansible",
-        "level": "80%"
-      },
-      {
-        "name": "Experience with Docker for containerization and container orchestration with Kube",
-        "level": "80%"
-      },
-      {
-        "name": "UX/UI design and development with a focus on creating engaging user experiences",
-        "level": "95%"
-      },
-      {
-        "name": "Management of technical teams and projects with a focus on delivering quality solutions on time and within budget",
-        "level": "80%"
-      },
-      {
-        "name": "Architectural solutions design and development with a focus on scalability and availability of systems and services",
-        "level": "85%"
-      },
-      {
-        "name": "Experience with Agile methodologies such as Scrum and Kanban",
-        "level": "80%"
-      },
-      {
-        "name": "SEO optimization for improving a website and application visibility and ranking",
-        "level": "100%"
-      },
-      {
-        "name": "Troubleshooting technical issues and providing effective solutions",
-        "level": "100%"
-      },
-      {
-        "name": "Requirements analysis and gathering for effective project planning and execution",
-        "level": "100%"
-      },
-      {
-        "name": "Atomic strategies development for efficient code and system maintenance",
-        "level": "100%"
-      },
-      {
-        "name": "Platform modularization for scalability, flexibility, and ease of maintenance",
+        "name": "Driving DevOps, CI/CD, and automation practices that increase reliability and deployment frequency.",
         "level": "90%"
       }
     ]
