@@ -28,7 +28,7 @@ export default function Footer({ data }) {
               {name?.split(' ')[0] || 'Sam'}
               <span className="logo-bracket">/&gt;</span>
             </span>
-            <p>Software Architect & AI Engineering Leader</p>
+            <p>Software Migration & Integration Architect</p>
           </div>
 
           <div className="footer-social">
@@ -55,7 +55,7 @@ export default function Footer({ data }) {
             © {new Date().getFullYear()} {name}. Built with <FiHeart className="heart-icon" /> & AI
           </p>
           <p className="footer-tech">
-            React • Three.js • NVIDIA NIM • GLM 5.1
+            React • Three.js • AI
           </p>
         </div>
       </div>

@@ -1,9 +1,12 @@
-name: Deploy Portfolio to GitHub Pages
+name: Build and Deploy Portfolio
 
 on:
   push:
-    branches: [ "main" ]
-  workflow_dispatch:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -11,47 +14,49 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: github-pages
+  cancel-in-progress: true
 
 jobs:
   build:
+    name: Build React App
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22.x
           cache: npm
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build
+      - name: Build app
+        run: npx react-scripts build
         env:
           CI: false
           REACT_APP_NVD_TOKEN: ${{ secrets.REACT_NVD_TOKEN }}
-        run: npx react-scripts build
 
-      - name: Copy CNAME
-        run: cp CNAME build/CNAME
-
-      - name: Verify build output
-        run: ls -la build/ && echo "Build completed successfully"
-
-      - name: Upload build output
+      - name: Upload GitHub Pages artifact
+        if: github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
 
   deploy:
+    name: Deploy to GitHub Pages
     needs: build
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

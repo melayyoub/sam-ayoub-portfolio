@@ -836,25 +836,38 @@ function OverlayPanel({ type, data, onClose }) {
           {type === 'resume' && (
             <div className="office-overlay-content">
               <h2>📋 Resume</h2>
-              {data?.work && data.work.map((job, i) => (
-                <div key={i} className="office-resume-item">
-                  <h3>{job.company}</h3>
-                  <p className="office-resume-role">{job.role}</p>
-                  <p className="office-resume-desc">{job.description}</p>
-                </div>
-              ))}
+              {data?.work && data.work.length > 0 ? (
+                data.work.map((job, i) => (
+                  <div key={i} className="office-resume-item">
+                    <h3>{job.company}</h3>
+                    <p className="office-resume-role">{job.title}</p>
+                    <p className="office-resume-years">{job.years}</p>
+                    <p className="office-resume-desc">{job.description}</p>
+                  </div>
+                ))
+              ) : (
+                <p className="office-overlay-empty">Resume data loading… Try again in a moment.</p>
+              )}
             </div>
           )}
           {type === 'certs' && (
             <div className="office-overlay-content">
               <h2>🏆 Certifications</h2>
-              {data?.certs && data.certs.map((cert, i) => (
-                <div key={i} className="office-cert-item">
-                  <h3>{cert.name}</h3>
-                  <p>{cert.issuer}</p>
-                  <span className="office-cert-date">{cert.date}</span>
-                </div>
-              ))}
+              {data?.certs && data.certs.length > 0 ? (
+                data.certs.map((cert, i) => (
+                  <div key={i} className="office-cert-item">
+                    <h3>{cert.title}</h3>
+                    <p>{cert.source}</p>
+                    {cert.url && (
+                      <a href={cert.url} target="_blank" rel="noopener noreferrer" className="office-cert-link">
+                        View Certificate →
+                      </a>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <p className="office-overlay-empty">Certifications data loading… Try again in a moment.</p>
+              )}
             </div>
           )}
         </motion.div>

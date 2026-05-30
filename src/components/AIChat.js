@@ -264,7 +264,8 @@ export default function AIChat() {
   const NIM_API_URL = 'https://integrate.api.nvidia.com/v1/chat/completions';
   const NIM_API_KEY = process.env.REACT_APP_NVD_TOKEN || '';
 
-  const SYSTEM_PROMPT = `You are Sam Ayoub's AI portfolio assistant. ALWAYS prioritize Sam's resume data when answering questions about him.
+// Debug: log env var status at module load (token presence only, never the value)
+console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
 
 Sam Ayoub (Mutasem Elayyoub) — Software Architect & Engineering Director / Software Migration & Integration Consultant
 Location: Cary, NC / San Diego, CA
