@@ -1,4 +1,4 @@
-name: Deploy Muvani Store
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
@@ -28,9 +28,11 @@ jobs:
           cache: npm
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build
+        env:
+          REACT_APP_NVD_TOKEN: ${{ secrets.REACT_NVD_TOKEN }}
         run: npm run build
 
       - name: Upload build output

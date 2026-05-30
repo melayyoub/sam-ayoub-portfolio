@@ -22,7 +22,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install npx
-    - run: npm install
+    - run: npm install --legacy-peer-deps
     - run: npm run build
     - run: npm run ready --if-present
+    env:
+          REACT_APP_NVD_TOKEN: ${{ secrets.REACT_NVD_TOKEN }}

@@ -1,201 +1,202 @@
-
 /**
- * Portfolio, show your resume in different way
+ * Portfolio — Modern Resume Section
  * Built by Sam Ayoub, Reallexi.com
- * https://github.com/melayyoub
  * https://sam.reallexi.com
- * Important: To use this code please leave the copyright in place
- * Reallexi LLC, https://reallexi.com
+ * © Reallexi LLC
  */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import Carousel from 'react-multi-carousel';
-// import Zmage from 'react-zmage';
+import { motion, AnimatePresence } from 'framer-motion';
 import { TagCloud } from 'react-tagcloud';
+import { FiBriefcase, FiBookOpen, FiAward, FiCpu, FiTarget } from 'react-icons/fi';
 
-export default function Resume(props) {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 6
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2
-    }
-  };
-  const { data } = props;
-  //   function getRandomColor() {
-  //     let letters = '0123456789ABCDEF';
-  //     let color = '#';
-  //     for (let i = 0; i < 6; i++) {
-  //       color += letters[Math.floor(Math.random() * 16)];
-  //     }
-  //     return color;
-  //   }
-  const [message, setMessage] = useState(
-    'To learn more about me, click on any skill from my skills cloud'
-  );
-  const [tagSkill, setTagSkill] = useState('');
+export default function Resume({ data }) {
+  const [activeTab, setActiveTab] = useState('work');
+  const [selectedSkill, setSelectedSkill] = useState(null);
+
   if (!data) return null;
-  const skillmessage = props.data.skillmessage;
-  const skills = props.data.skills;
-  const education = props.data.education.map(function (education) {
-    return (
-      <div key={education.school + Math.random()}>
-        <h3>{education.school}</h3>
-        <p className="info">
-          {education.degree} <span>&bull;</span>
-          <em className="date">{education.graduated}</em>
-        </p>
-        <p>{education.description}</p>
-      </div>
-    );
-  });
 
-  const work = props.data.work.map(function (work) {
-    return (
-      <div key={work.company + Math.random()}>
-        <h3>{work.company}</h3>
-        <p className="info">
-          {work.title}
-          <span>&bull;</span> <em className="date">{work.years}</em>
-        </p>
-        <p>{work.description}</p>
-      </div>
-    );
-  });
+  const { work, education, skills, certs, objectives, skillmessage } = data;
 
-  // const objectives = props.data.objectives.map((skills) => {
-  //   const backgroundColor = getRandomColor();
-  //   const className = 'bar-expand  border' + skills.name.toLowerCase();
-  //   const width = skills.level;
+  const tabs = [
+    { id: 'work', label: 'Experience', icon: <FiBriefcase /> },
+    { id: 'education', label: 'Education', icon: <FiBookOpen /> },
+    { id: 'skills', label: 'Skills', icon: <FiCpu /> },
+    { id: 'certs', label: 'Certifications', icon: <FiAward /> },
+    { id: 'objectives', label: 'Objectives', icon: <FiTarget /> },
+  ];
 
-  //   return (
-  //     <li key={skills.name} className="col-6">
-  //       <div style={{ width, backgroundColor }} className={className}>
-  //         <div className="p-2 text-dark ">{width}</div>
-  //       </div>
-  //       <em className="text-dark" style={{ fontSize: '10px' }}>
-  //         {skills.name}
-  //       </em>
-  //     </li>
-  //   );
-  // });
-  const objectives = props.data.objectives.map((skills) => {
-    //   const backgroundColor = getRandomColor();
-    //   const className = 'bar-expand  border' + skills.name.toLowerCase();
-    //   const width = skills.level;
-
-    return (
-      <li key={skills.name + Math.random()} className="skillsItems">
-        {skills.name}
-      </li>
-    );
-  });
-  const certs = props.data.certs.map(function (cert) {
-    // let certImage = cert.image;
-
-    return (
-      <a href={cert.url} key={cert.title + Math.random()} className="columns portfolio-item">
-        <div className="item-wrap">
-           <div style={{ textAlign: 'center' }}>{cert.title}</div>
-          <div style={{ textAlign: 'center' }}>Certification link</div>
-        </div>
-      </a>
-    );
-  });
   return (
-    <section id="resume">
-      <div>
-        <div className="row work">
-          <div className="three columns header-col">
-            <h1>
-              <span>Work History</span>
-            </h1>
-          </div>
+    <section id="resume" className="modern-resume">
+      <div className="section-container">
+        <motion.div
+          className="section-header"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="section-tag">Resume</span>
+          <h2 className="section-title">My <span className="gradient-text">Professional Journey</span></h2>
+        </motion.div>
 
-          <div className="nine columns main-col">{work}</div>
+        {/* Tab navigation */}
+        <div className="resume-tabs">
+          {tabs.map((tab) => (
+            <motion.button
+              key={tab.id}
+              className={`resume-tab ${activeTab === tab.id ? 'active' : ''}`}
+              onClick={() => setActiveTab(tab.id)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {tab.icon}
+              <span>{tab.label}</span>
+              {activeTab === tab.id && (
+                <motion.div className="tab-indicator" layoutId="tabIndicator" />
+              )}
+            </motion.button>
+          ))}
         </div>
-      </div>
-      <div>
-        <div className="row education">
-          <div className="three columns header-col">
-            <h1>
-              <span>Education</span>
-            </h1>
-          </div>
-          <div className="nine columns main-col">
-            <div className="row item">
-              <div className="twelve columns">{education}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="row education">
-          <div className="three columns header-col">
-            <h1>
-              <span>Skills</span>
-            </h1>
-          </div>
 
-          <div className="nine  columns main-col">
-            <div className="alert  header-col">
-              <h3>{tagSkill}</h3>
-              {message}
-            </div>
-            <TagCloud
-              minSize={12}
-              maxSize={35}
-              tags={skills}
-              onClick={(tag) => {
-                setTagSkill(tag.value);
-                setMessage(`${tag.description}`);
-              }}
-            />
-          </div>
-        </div>
-      </div>
+        {/* Tab content */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            className="resume-tab-content"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Work Experience */}
+            {activeTab === 'work' && (
+              <div className="timeline">
+                {work?.map((job, i) => (
+                  <motion.div
+                    key={job.company + i}
+                    className="timeline-item"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <div className="timeline-dot" />
+                    <div className="timeline-content glass-card">
+                      <div className="timeline-header">
+                        <h3>{job.company}</h3>
+                        <span className="timeline-date">{job.years}</span>
+                      </div>
+                      <p className="timeline-role">{job.title || job.role}</p>
+                      <p className="timeline-desc">{job.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            )}
 
-      <div>
-        <div className="row education">
-          <div className="three columns header-col">
-            <h1>
-              <span>Certifications</span>
-            </h1>
-          </div>
-          <div className="nine columns main-col">
-            <Carousel responsive={responsive}>{certs}</Carousel>
-          </div>
-        </div>
-      </div>
+            {/* Education */}
+            {activeTab === 'education' && (
+              <div className="timeline">
+                {education?.map((edu, i) => (
+                  <motion.div
+                    key={edu.school + i}
+                    className="timeline-item"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <div className="timeline-dot" />
+                    <div className="timeline-content glass-card">
+                      <div className="timeline-header">
+                        <h3>{edu.school}</h3>
+                        <span className="timeline-date">{edu.graduated}</span>
+                      </div>
+                      <p className="timeline-role">{edu.degree}</p>
+                      <p className="timeline-desc">{edu.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            )}
 
-      <div>
-        <div className="row skills">
-          <div className="three columns header-col">
-            <h1>
-              <span>Skills & Objectives</span>
-            </h1>
-          </div>
+            {/* Skills */}
+            {activeTab === 'skills' && (
+              <div className="skills-section">
+                <p className="skills-message">{skillmessage}</p>
+                {selectedSkill && (
+                  <motion.div
+                    className="skill-detail glass-card"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    <h3>{selectedSkill.value}</h3>
+                    <p>{selectedSkill.description}</p>
+                  </motion.div>
+                )}
+                <div className="skills-cloud">
+                  <TagCloud
+                    minSize={14}
+                    maxSize={42}
+                    tags={skills}
+                    onClick={(tag) => setSelectedSkill(tag)}
+                    colorOptions={{
+                      luminosity: 'light',
+                      hue: 'blue',
+                    }}
+                  />
+                </div>
+              </div>
+            )}
 
-          <div className="nine  columns main-col">
-            <p>{skillmessage}</p>
-            <br />
-            {/* <div className="bars d-flex"> */}
-            <ul className="skills row text-start ">{objectives}</ul>
-            {/* </div> */}
-          </div>
-        </div>
+            {/* Certifications */}
+            {activeTab === 'certs' && (
+              <div className="certs-grid">
+                {certs?.map((cert, i) => (
+                  <motion.a
+                    key={cert.title + i}
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cert-card glass-card"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    whileHover={{ scale: 1.03, y: -5 }}
+                  >
+                    <div className="cert-icon">🏆</div>
+                    <h3>{cert.title || cert.name}</h3>
+                    <p>{cert.issuer}</p>
+                    <span className="cert-date">{cert.date}</span>
+                  </motion.a>
+                ))}
+              </div>
+            )}
+
+            {/* Objectives */}
+            {activeTab === 'objectives' && (
+              <div className="objectives-grid">
+                <p className="objectives-message">{skillmessage}</p>
+                {objectives?.map((obj, i) => (
+                  <motion.div
+                    key={obj.name + i}
+                    className="objective-card glass-card"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <FiTarget className="objective-icon" />
+                    <span>{obj.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            )}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

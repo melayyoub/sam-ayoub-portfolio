@@ -1,25 +1,27 @@
 {
   "short_name": "Sam Ayoub",
-  "name": "Sam Ayoub (Mutasem Elayyoub) Portfolio",
+  "name": "Sam Ayoub - Software Architect & AI Engineering Leader",
+  "description": "Portfolio of Sam Ayoub - Software Architect & AI Engineering Leader with 15+ years in FinTech, AI, and SaaS",
   "icons": [
     {
       "src": "logo192.jpeg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "logo192.jpeg",
       "type": "image/jpeg",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.jpeg",
       "type": "image/jpeg",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0a0a1a",
+  "background_color": "#0a0a1a",
+  "orientation": "portrait-primary",
+  "categories": ["technology", "business", "portfolio"],
+  "lang": "en",
+  "scope": "/"
 }

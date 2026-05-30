@@ -1,53 +1,73 @@
-
-
 /**
- * Portfolio, show your resume in different way
+ * Portfolio — Modern Footer
  * Built by Sam Ayoub, Reallexi.com
- * https://github.com/melayyoub
  * https://sam.reallexi.com
- * Important: To use this code please leave the copyright in place
- * Reallexi LLC, https://reallexi.com
+ * © Reallexi LLC
  */
 /* eslint-disable react/prop-types */
-import React, { Component } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FiLinkedin, FiGithub, FiHeart, FiArrowUp } from 'react-icons/fi';
 
-class Footer extends Component {
-  render() {
-    if (!this.props.data) return null;
+export default function Footer({ data }) {
+  if (!data) return null;
 
-    const networks = this.props.data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
+  const { social, name } = data;
 
-    return (
-      <footer>
-        <div className="row">
-          <div>
-            <div className="twelve columns">
-              <ul className="social-links">{networks}</ul>
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-              <ul className="copyright">
-                <li>&copy; Sam Ayoub</li>
-                <li>Design by{' Sam Ayoub '}</li>
-              </ul>
-            </div>
+  return (
+    <footer className="modern-footer">
+      <div className="footer-container">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <span className="footer-logo">
+              <span className="logo-bracket">&lt;</span>
+              {name?.split(' ')[0] || 'Sam'}
+              <span className="logo-bracket">/&gt;</span>
+            </span>
+            <p>Software Architect & AI Engineering Leader</p>
           </div>
 
-          <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open"></i>
-            </a>
+          <div className="footer-social">
+            {social?.map((network) => (
+              <motion.a
+                key={network.name}
+                href={network.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-social-link"
+                whileHover={{ scale: 1.2, y: -3 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                {network.name === 'linkedin' ? <FiLinkedin size={18} /> :
+                 network.name === 'github' ? <FiGithub size={18} /> :
+                 <span>{network.name}</span>}
+              </motion.a>
+            ))}
           </div>
         </div>
-      </footer>
-    );
-  }
-}
 
-export default Footer;
+        <div className="footer-bottom">
+          <p>
+            © {new Date().getFullYear()} {name}. Built with <FiHeart className="heart-icon" /> & AI
+          </p>
+          <p className="footer-tech">
+            React • Three.js • NVIDIA NIM • GLM 5.1
+          </p>
+        </div>
+      </div>
+
+      <motion.button
+        className="back-to-top"
+        onClick={scrollToTop}
+        whileHover={{ scale: 1.1, y: -3 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <FiArrowUp size={20} />
+      </motion.button>
+    </footer>
+  );
+}
