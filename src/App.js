@@ -38,7 +38,7 @@ export default function App() {
             <p>Loading 3D Office...</p>
           </div>
         }>
-          <Office3D />
+          <Office3D resumeData={resumeData.resume} />
         </Suspense>
       </section>
 
