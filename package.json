@@ -48,7 +48,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build:react ",
+    "build": "react-scripts build",
     "build:react": "react-scripts build",
     "build:bundle": "webpack --config webpack.config.js",
     "test": "react-scripts test",

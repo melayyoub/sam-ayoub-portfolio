@@ -267,21 +267,20 @@ export default function AIChat() {
 // Debug: log env var status at module load (token presence only, never the value)
 console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
 
+  const SYSTEM_PROMPT = `You are Sam Ayoub's professional AI assistant. Answer questions about Sam using this data FIRST before any external knowledge:
+
 Sam Ayoub (Mutasem Elayyoub) — Software Architect & Engineering Director / Software Migration & Integration Consultant
 Location: Cary, NC / San Diego, CA
 Current: Senior Software Architect at First Citizens Bank (Silicon Valley Bank division)
 Summary: 15+ years leading software architecture, migration, and integration across FinTech, AI & SaaS.
-
 PRIMARY EXPERTISE: Software Migration & Integration Consulting, Enterprise Architecture, API Modernization
 AI EXPERTISE: AI/ML Engineering, LLM Integration, AI Agents (LangChain, CrewAI), RAG & Vector DBs, MLOps
-
 Certifications: NVIDIA Deep Learning Institute (GenAI & LLMs), NVIDIA NIM Agent Builder, AWS Solutions Architect, K8s CKA
 Companies: First Citizens Bank/SVB, Silicon Valley Bank, Achieve Internet, Aira, Outsell Inc.
 Projects: OpenAPI/AsyncAPI UI Render, RealLexi, API Doc Pro, GetFreeAPI, DDKits
 Skills: React, Vue, Node.js, Python, Docker, Kubernetes, LangChain, TensorFlow, PyTorch
 Education: BS Computer Science
 Website: https://sam.reallexi.com
-
 RULES:
 - When asked about Sam, Mutasem, or Elayyoub — answer from the data above FIRST
 - Be helpful, professional, and concise
@@ -304,6 +303,16 @@ RULES:
     setIsThinking(true);
     setIsLoading(true);
 
+    // Check if API key is available
+    if (!NIM_API_KEY) {
+      console.warn('[AIChat] No API key found — REACT_APP_NVD_TOKEN is not set. Using local KB.');
+      const noKeyResponse = "I can tell you about Sam's experience in software migration & integration, AI/ML engineering, his projects, certifications, or skills. What would you like to explore?";
+      setMessages(prev => [...prev, { role: 'assistant', text: noKeyResponse, thinking: 'API key not configured — using local knowledge base' }]);
+      setIsThinking(false);
+      setIsLoading(false);
+      return;
+    }
+
     const chatMessages = [
       { role: 'system', content: SYSTEM_PROMPT },
       ...messages.filter(m => m.text).map(m => ({
@@ -314,12 +323,12 @@ RULES:
     ];
 
     try {
+      console.log('[AIChat] Calling NVIDIA NIM API...');
       const response = await fetch(NIM_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${NIM_API_KEY}`,
-          'NVCF-PAYLOAD-LOG-DISABLE': 'true',
         },
         body: JSON.stringify({
           model: 'nvidia/llama-3.1-nemotron-70b-instruct',
@@ -332,24 +341,19 @@ RULES:
       });
 
       if (!response.ok) {
-        throw new Error(`API returned ${response.status}`);
+        const errorBody = await response.text().catch(() => '');
+        console.error(`[AIChat] API error ${response.status}:`, errorBody);
+        throw new Error(`API returned ${response.status}: ${errorBody.slice(0, 200)}`);
       }
 
       const data = await response.json();
+      console.log('[AIChat] API response received');
       const assistantMessage = data.choices?.[0]?.message?.content || "I'm having trouble connecting right now. Please try again.";
-      setMessages(prev => [...prev, {
-        role: 'assistant',
-        text: assistantMessage,
-        thinking: 'Analyzed portfolio context and generated response',
-      }]);
+      setMessages(prev => [...prev, { role: 'assistant', text: assistantMessage, thinking: 'Analyzed portfolio context and generated response' }]);
     } catch (error) {
-      console.error('API Error:', error);
+      console.error('[AIChat] API call failed:', error.message);
       const fallbackResponse = "I can tell you about Sam's experience in software migration & integration, AI/ML engineering, his projects, certifications, or skills. What would you like to explore?";
-      setMessages(prev => [...prev, {
-        role: 'assistant',
-        text: fallbackResponse,
-        thinking: 'Used local knowledge base (API unavailable)',
-      }]);
+      setMessages(prev => [...prev, { role: 'assistant', text: fallbackResponse, thinking: `API unavailable (${error.message}) — using local knowledge base` }]);
     } finally {
       setIsThinking(false);
       setIsLoading(false);
