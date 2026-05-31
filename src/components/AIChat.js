@@ -269,7 +269,8 @@ const NIM_MODEL = 'meta/llama-3.1-70b-instruct';
 console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
 
 // Fallback to public CORS proxy if direct API fails (due to preflight issues)
-const FALLBACK_PROXY_URL = 'https://corsproxy.io/?' + encodeURIComponent('https://integrate.api.nvidia.com/v1/chat/completions');
+// Using a simple CORS proxy that works with GitHub Pages
+const FALLBACK_PROXY_URL = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent('https://integrate.api.nvidia.com/v1/chat/completions');
 
 const SYSTEM_PROMPT = `You are Sam Ayoub's professional AI assistant. Answer questions about Sam using this data FIRST before any external knowledge:
 
@@ -385,7 +386,7 @@ RULES:
     } finally {
       setIsThinking(false); setIsLoading(false);
     }
-  }, [messages, NIM_API_KEY, SYSTEM_PROMPT]);
+  }, [messages, NIM_API_KEY, SYSTEM_PROMPT, FALLBACK_PROXY_URL]);
 
   const handleSend = () => {
     const trimmed = input.trim();

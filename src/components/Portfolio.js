@@ -67,12 +67,6 @@ export default function Portfolio({ data }) {
                 whileHover={{ y: -8, scale: 1.02 }}
                 onClick={() => setSelectedProject(project)}
               >
-                <div className="project-image-wrapper">
-                  <img src={project.image} alt={project.title} className="project-image" />
-                  <div className="project-overlay">
-                    <FiExternalLink size={24} />
-                  </div>
-                </div>
                 <div className="project-info">
                   <h3>{project.title}</h3>
                   <div className="project-tags">
@@ -106,7 +100,6 @@ export default function Portfolio({ data }) {
                 <button className="modal-close" onClick={() => setSelectedProject(null)}>
                   <FiX size={20} />
                 </button>
-                <img src={selectedProject.image} alt={selectedProject.title} className="modal-image" />
                 <div className="modal-content">
                   <h2>{selectedProject.title}</h2>
                   <div className="modal-tags">

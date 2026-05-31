@@ -490,63 +490,54 @@
       {
         "title": "OpenAPI/AsyncAPI UI Custom Render",
         "category": "AI-Powered API Documentation Engine",
-        "image": "/assets/images/webicon.png",
         "url": "https://ui.apidocpro.com",
         "description": "Intelligent API documentation renderer with AI-assisted schema generation, auto-completion, and natural language API exploration powered by LLMs."
       },
       {
         "title": "RealLexi The Real Word",
         "category": "AI Content & NLP Platform",
-        "image": "/assets/images/webicon.png",
         "url": "https://reallexi.com",
         "description": "AI-driven content platform leveraging NLP, sentiment analysis, and generative AI for automated content creation and real-time language processing."
       },
       {
         "title": "Real Estates Virtual World Game",
         "category": "AI-Enhanced 3D Virtual Environment",
-        "image": "/assets/images/webicon.png",
         "url": "https://www.revwgame.com",
         "description": "3D virtual real estate platform with AI-powered property recommendations, procedural generation, and intelligent NPC interactions."
       },
       {
         "title": "API Doc Pro, Render and Editor",
         "category": "AI-Assisted API Design & Documentation",
-        "image": "/assets/images/webicon.png",
         "url": "https://apidocpro.com",
         "description": "Enterprise API portal with AI-powered documentation generation, intelligent code samples, and automated API testing with LLM integration."
       },
       {
         "title": "GetFreeAPI Management Platform",
         "category": "AI-Native API Management",
-        "image": "/assets/images/webicon.png",
         "url": "https://www.getfreeapi.com",
         "description": "Full-lifecycle API management platform with AI-driven analytics, automated rate limiting, anomaly detection, and intelligent traffic routing."
       },
       {
         "title": "Flying Astronaut",
         "category": "AI-Powered Mobile Game",
-        "image": "/assets/images/android.png",
         "url": "https://www.ddkits.com",
         "description": "Mobile game featuring AI-driven procedural level generation, adaptive difficulty, and real-time player behavior analysis."
       },
       {
         "title": "DDKits CLI",
         "category": "AI-Optimized DevOps Automation",
-        "image": "/assets/images/webicon.png",
         "url": "https://www.ddkits.com",
         "description": "Docker proxy solution with AI-powered container orchestration, predictive scaling, and automated infrastructure optimization."
       },
       {
         "title": "AvStructure LLC",
         "category": "AI Construction Intelligence Platform",
-        "image": "/assets/images/webicon.png",
         "url": "https://www.avstructure.com",
         "description": "Construction management platform with AI-driven project forecasting, computer vision for site inspection, and predictive cost analytics."
       },
       {
         "title": "Flying Eagle",
         "category": "AI-Adaptive Mobile Game",
-        "image": "/assets/images/android.png",
         "url": "https://www.ddkits.com",
         "description": "Mobile game with AI-powered dynamic difficulty adjustment, procedural content generation, and player engagement optimization."
       },

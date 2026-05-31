@@ -60,5 +60,7 @@ This portfolio is configured for deployment to GitHub Pages. The build process a
 ## AI Chat
 The AI chat assistant uses NVIDIA's LLM API for enhanced responses. The chat prioritizes information from your resume data first, then uses external knowledge.
 
+**Note:** The AI chat works in both development (`npm start`) and production builds. The implementation includes a fallback to a public CORS proxy in case direct API calls fail due to browser CORS preflight restrictions. For production deployment, ensure your GitHub repository has the `REACT_NVD_TOKEN` secret configured.
+
 ## License
 MIT License
