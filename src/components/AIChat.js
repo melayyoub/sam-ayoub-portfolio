@@ -261,11 +261,14 @@ export default function AIChat() {
     }
   }, [isOpen]);
 
-  const NIM_API_URL = 'https://integrate.api.nvidia.com/v1/chat/completions';
+// Use CORS proxy to avoid browser CORS restrictions with NVIDIA API
+  // Production proxy on Vercel; dev proxy via package.json "proxy" field
+  const PROXY_URL = process.env.REACT_APP_PROXY_URL || '/api/chat';
   const NIM_API_KEY = process.env.REACT_APP_NVD_TOKEN || '';
 
-// Debug: log env var status at module load (token presence only, never the value)
-console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
+  // Debug: log env var status at module load (token presence only, never the value)
+  console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
+  console.log('[AIChat] Proxy URL:', PROXY_URL);
 
   const SYSTEM_PROMPT = `You are Sam Ayoub's professional AI assistant. Answer questions about Sam using this data FIRST before any external knowledge:
 
@@ -299,19 +302,9 @@ RULES:
       return;
     }
 
-    // SECOND: Fall back to API if no local match
+    // SECOND: Fall back to AI API via CORS proxy if no local match
     setIsThinking(true);
     setIsLoading(true);
-
-    // Check if API key is available
-    if (!NIM_API_KEY) {
-      console.warn('[AIChat] No API key found — REACT_APP_NVD_TOKEN is not set. Using local KB.');
-      const noKeyResponse = "I can tell you about Sam's experience in software migration & integration, AI/ML engineering, his projects, certifications, or skills. What would you like to explore?";
-      setMessages(prev => [...prev, { role: 'assistant', text: noKeyResponse, thinking: 'API key not configured — using local knowledge base' }]);
-      setIsThinking(false);
-      setIsLoading(false);
-      return;
-    }
 
     const chatMessages = [
       { role: 'system', content: SYSTEM_PROMPT },
@@ -323,20 +316,18 @@ RULES:
     ];
 
     try {
-      console.log('[AIChat] Calling NVIDIA NIM API...');
-      const response = await fetch(NIM_API_URL, {
+      console.log('[AIChat] Calling AI API via proxy...');
+      const response = await fetch(PROXY_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${NIM_API_KEY}`,
         },
         body: JSON.stringify({
-          model: 'nvidia/llama-3.1-nemotron-70b-instruct',
+          model: 'meta/llama-3.1-70b-instruct',
           messages: chatMessages,
           temperature: 0.7,
           max_tokens: 500,
           top_p: 0.9,
-          stream: false,
         }),
       });
 
@@ -349,16 +340,27 @@ RULES:
       const data = await response.json();
       console.log('[AIChat] API response received');
       const assistantMessage = data.choices?.[0]?.message?.content || "I'm having trouble connecting right now. Please try again.";
-      setMessages(prev => [...prev, { role: 'assistant', text: assistantMessage, thinking: 'Analyzed portfolio context and generated response' }]);
+
+      setMessages(prev => [...prev, {
+        role: 'assistant',
+        text: assistantMessage,
+        thinking: 'Analyzed portfolio context and generated response'
+      }]);
     } catch (error) {
       console.error('[AIChat] API call failed:', error.message);
-      const fallbackResponse = "I can tell you about Sam's experience in software migration & integration, AI/ML engineering, his projects, certifications, or skills. What would you like to explore?";
-      setMessages(prev => [...prev, { role: 'assistant', text: fallbackResponse, thinking: `API unavailable (${error.message}) — using local knowledge base` }]);
+      // Provide a helpful fallback based on the query type
+      const fallbackResponse = getLocalResponse(userMessage)
+        || "I can tell you about Sam's experience in software migration & integration, AI/ML engineering, his projects, certifications, or skills. What would you like to explore?";
+      setMessages(prev => [...prev, {
+        role: 'assistant',
+        text: fallbackResponse,
+        thinking: `API unavailable (${error.message}) — using local knowledge base`
+      }]);
     } finally {
       setIsThinking(false);
       setIsLoading(false);
     }
-  }, [messages, NIM_API_KEY]);
+  }, [messages, PROXY_URL, SYSTEM_PROMPT]);
 
   const handleSend = () => {
     const trimmed = input.trim();
