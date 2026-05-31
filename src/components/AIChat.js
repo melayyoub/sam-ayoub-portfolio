@@ -268,6 +268,9 @@ const NIM_MODEL = 'meta/llama-3.1-70b-instruct';
 // Debug: log env var status at module load (token presence only, never the value)
 console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
 
+// Fallback to public CORS proxy if direct API fails (due to preflight issues)
+const FALLBACK_PROXY_URL = 'https://corsproxy.io/?' + encodeURIComponent('https://integrate.api.nvidia.com/v1/chat/completions');
+
 const SYSTEM_PROMPT = `You are Sam Ayoub's professional AI assistant. Answer questions about Sam using this data FIRST before any external knowledge:
 
 Sam Ayoub (Mutasem Elayyoub) — Software Architect & Engineering Director / Software Migration & Integration Consultant
@@ -316,7 +319,9 @@ RULES:
         throw new Error('API key not configured — set REACT_APP_NVD_TOKEN env variable');
       }
       console.log('[AIChat] Calling NVIDIA NIM API directly from browser...');
-      const response = await fetch(NIM_API_URL, {
+      
+      // Try direct API call first
+      let response = await fetch(NIM_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -331,11 +336,33 @@ RULES:
           top_p: 0.9,
         }),
       });
+      
+      // If direct call fails, try fallback proxy
+      if (!response.ok) {
+        console.log('[AIChat] Direct API failed, trying fallback proxy...');
+        response = await fetch(FALLBACK_PROXY_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${NIM_API_KEY}`,
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            model: NIM_MODEL,
+            messages: chatMessages,
+            temperature: 0.7,
+            max_tokens: 500,
+            top_p: 0.9,
+          }),
+        });
+      }
+      
       if (!response.ok) {
         const errorBody = await response.text().catch(() => '');
         console.error(`[AIChat] API error ${response.status}:`, errorBody);
         throw new Error(`API returned ${response.status}: ${errorBody.slice(0, 200)}`);
       }
+      
       const data = await response.json();
       console.log('[AIChat] API response received');
       const assistantMessage = data.choices?.[0]?.message?.content || "I'm having trouble connecting right now. Please try again.";

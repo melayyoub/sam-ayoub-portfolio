@@ -1,21 +1,64 @@
 # Sam (Mutasem Elayyoub) Ayoub Portfolio
 
-If you would like to have the same portfolio on github with zero cost, it's easy
+This is a professional portfolio website for Sam Ayoub, showcasing his expertise in software architecture, migration & integration consulting, and AI engineering.
 
-- Fork me :)
-
-#### All what you need to do is to update the files below with your information then push it to your own repo on github.com
-- public/assets/resume.json
-- public/assets/resume.docx
-- package.json
-
-## live demo 
+## Live Demo
 https://sam.reallexi.com
 
- - 5 minutes resume portfolio builder for free.
+## Features
+- Modern responsive design with glassmorphism dark theme
+- 3D virtual office experience using Three.js
+- AI chat assistant powered by NVIDIA NIM API
+- SEO optimized with complete meta tags
+- Fully responsive for all devices
 
- - Good luck in your career
+## Setup Instructions
 
- #### Regards
- #### Sam 
- #### https://reallexi.com
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Installation
+1. Fork this repository
+2. Clone your fork locally
+3. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+### Configuration
+1. Create a `.env` file in the root directory:
+   ```
+   REACT_APP_NVD_TOKEN=nvapi-your-token-here
+   ```
+
+2. Add your NVIDIA API token as a GitHub secret for deployment:
+   - Go to your repository → Settings → Secrets and variables → Actions
+   - Click "New repository secret"
+   - Name: `REACT_NVD_TOKEN`
+   - Value: Your actual NVIDIA API token
+
+### Development
+```bash
+npm start
+```
+
+### Build
+```bash
+npm run build
+```
+
+## Customization
+Update the following files with your information:
+- `public/assets/resume.json` - Professional resume data
+- `package.json` - Personal information and metadata
+- `src/components/Office3D.js` - Office layout and content
+
+## Deployment
+This portfolio is configured for deployment to GitHub Pages. The build process automatically embeds the API token from the `REACT_APP_NVD_TOKEN` environment variable.
+
+## AI Chat
+The AI chat assistant uses NVIDIA's LLM API for enhanced responses. The chat prioritizes information from your resume data first, then uses external knowledge.
+
+## License
+MIT License
