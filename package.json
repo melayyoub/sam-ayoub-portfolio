@@ -65,9 +65,7 @@
     "dev": "npm run webpack-dev-server -- --env mode=development",
     "prod": "npm run webpack -- --env mode=production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "proxy:server": "node proxy-server.js",
-    "dev:full": "concurrently \"npm run proxy:server\" \"npm start\""
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -95,7 +93,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",

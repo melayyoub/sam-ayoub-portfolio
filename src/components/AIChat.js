@@ -261,16 +261,14 @@ export default function AIChat() {
     }
   }, [isOpen]);
 
-// Use CORS proxy to avoid browser CORS restrictions with NVIDIA API
-  // Production proxy on Vercel; dev proxy via package.json "proxy" field
-  const PROXY_URL = process.env.REACT_APP_PROXY_URL || '/api/chat';
-  const NIM_API_KEY = process.env.REACT_APP_NVD_TOKEN || '';
+// Direct browser-to-NVIDIA API call (CORS supported: Access-Control-Allow-Origin: *)
+const NIM_API_URL = 'https://integrate.api.nvidia.com/v1/chat/completions';
+const NIM_API_KEY = process.env.REACT_APP_NVD_TOKEN || '';
+const NIM_MODEL = 'meta/llama-3.1-70b-instruct';
+// Debug: log env var status at module load (token presence only, never the value)
+console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
 
-  // Debug: log env var status at module load (token presence only, never the value)
-  console.log('[AIChat] REACT_APP_NVD_TOKEN present:', !!NIM_API_KEY, '| length:', NIM_API_KEY.length);
-  console.log('[AIChat] Proxy URL:', PROXY_URL);
-
-  const SYSTEM_PROMPT = `You are Sam Ayoub's professional AI assistant. Answer questions about Sam using this data FIRST before any external knowledge:
+const SYSTEM_PROMPT = `You are Sam Ayoub's professional AI assistant. Answer questions about Sam using this data FIRST before any external knowledge:
 
 Sam Ayoub (Mutasem Elayyoub) — Software Architect & Engineering Director / Software Migration & Integration Consultant
 Location: Cary, NC / San Diego, CA
@@ -302,10 +300,8 @@ RULES:
       return;
     }
 
-    // SECOND: Fall back to AI API via CORS proxy if no local match
-    setIsThinking(true);
-    setIsLoading(true);
-
+    // SECOND: Fall back to AI API directly (NVIDIA supports CORS: Access-Control-Allow-Origin: *)
+    setIsThinking(true); setIsLoading(true);
     const chatMessages = [
       { role: 'system', content: SYSTEM_PROMPT },
       ...messages.filter(m => m.text).map(m => ({
@@ -316,27 +312,30 @@ RULES:
     ];
 
     try {
-      console.log('[AIChat] Calling AI API via proxy...');
-      const response = await fetch(PROXY_URL, {
+      if (!NIM_API_KEY) {
+        throw new Error('API key not configured — set REACT_APP_NVD_TOKEN env variable');
+      }
+      console.log('[AIChat] Calling NVIDIA NIM API directly from browser...');
+      const response = await fetch(NIM_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${NIM_API_KEY}`,
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
-          model: 'meta/llama-3.1-70b-instruct',
+          model: NIM_MODEL,
           messages: chatMessages,
           temperature: 0.7,
           max_tokens: 500,
           top_p: 0.9,
         }),
       });
-
       if (!response.ok) {
         const errorBody = await response.text().catch(() => '');
         console.error(`[AIChat] API error ${response.status}:`, errorBody);
         throw new Error(`API returned ${response.status}: ${errorBody.slice(0, 200)}`);
       }
-
       const data = await response.json();
       console.log('[AIChat] API response received');
       const assistantMessage = data.choices?.[0]?.message?.content || "I'm having trouble connecting right now. Please try again.";
@@ -357,10 +356,9 @@ RULES:
         thinking: `API unavailable (${error.message}) — using local knowledge base`
       }]);
     } finally {
-      setIsThinking(false);
-      setIsLoading(false);
+      setIsThinking(false); setIsLoading(false);
     }
-  }, [messages, PROXY_URL, SYSTEM_PROMPT]);
+  }, [messages, NIM_API_KEY, SYSTEM_PROMPT]);
 
   const handleSend = () => {
     const trimmed = input.trim();
