@@ -1,9 +1,9 @@
 {
   "main": {
     "name": "Sam Ayoub",
-    "description": "Software Architect & Engineering Director / Software Migration & Integration Consultant / FinTech, AI & SaaS",
+    "description": "AI/ML Architecture Director & Engineering Team Lead / Big Data & ML Training Systems / Software Migration & Integration Architect",
     "image": "https://media.licdn.com/dms/image/C5603AQHQUBmlUQ5ilw/profile-displayphoto-shrink_100_100/0/1631487594657?e=1687392000&amp;v=beta&amp;t=Wdzxv9SiewOONMnCYaRWsrErnw_Ruutt7UdIJOoy1sY",
-    "bio": "Visionary software architect and engineering director with over 15 years of experience designing, scaling, and mentoring cross-functional teams across FinTech, AI, and SaaS industries. Expert in software migration and integration consulting, building high-performance API and cloud architectures on AWS, GCP, and Azure, with deep expertise in AI/ML systems, LLM integration, autonomous AI agents, and NVIDIA GPU-accelerated computing. Proven ability to lead large-scale digital transformations, architect intelligent systems with RAG pipelines and vector databases, and bridge business strategy with cutting-edge technology execution. Passionate about driving engineering excellence, fostering innovation, and delivering scalable, secure, and intelligent user-centric systems.",
+    "bio": "Engineering leader and principal architect directing cross-functional teams and technical strategy for AI/ML integration, big data platforms, and machine learning model training. As founder and principal architect of Reallexi LLC, I direct the architecture of a production AI product suite — private RAG memory systems, a local ML training platform with checkpoint-aware fine-tuning and artifact lineage, autonomous engineering agents, generative media pipelines, and a governed API gateway — owning each system end-to-end, from data pipeline to trained model to production inference. Alongside 15+ years architecting FinTech, SaaS, and enterprise platforms, including large-scale API and cloud modernization at First Citizens Bank and Silicon Valley Bank, I bring the same discipline to AI systems: scalable big-data pipelines, reproducible ML training, RAG and vector retrieval, and multi-agent orchestration, all delivered with the security, governance, and team mentorship that production AI demands.",
     "contactmessage": "Do not hesitate to contact me anytime",
     "email": "samsayoub@outlook.com",
     "phone": "+1 352-575-5665",
@@ -27,21 +27,6 @@
       {
         "name": "github",
         "url": "https://github.com/melayyoub",
-        "className": "fa fa-github"
-      },
-      {
-        "name": "github",
-        "url": "https://github.com/samayoub",
-        "className": "fa fa-github"
-      },
-      {
-        "name": "github",
-        "url": "https://github.com/samelayyoub",
-        "className": "fa fa-github"
-      },
-      {
-        "name": "github",
-        "url": "https://github.com/whywebs",
         "className": "fa fa-github"
       }
     ]
@@ -142,7 +127,7 @@
         "image": "https://media.licdn.com/dms/image/C560BAQGvXwJy1AlVdw/company-logo_100_100/0/1694627097860?e=1722441600&v=beta&t=MaXW0v0dY0d3y0h1mQlN1HSBbJpOo0R4MqOxJk1y1kE",
         "url": "https://build.nvidia.com" }
     ],
-    "skillmessage": "I focus on leading high-performing engineering organizations, modernizing platforms with AI-first strategies, and mentoring teams while keeping security, scalability, and intelligent automation at the core of every decision.",
+    "skillmessage": "I direct engineering teams and own architecture end-to-end for AI/ML integration, big data platforms, and ML model training — building systems that are auditable, secure, and scalable from raw data pipeline to trained model to production inference.",
     "education": [
       {
         "school": "Keller Graduate School of Management",
@@ -162,13 +147,13 @@
         "company": "First Citizens Bank, North Carolina",
         "title": "Software Architect Consultant",
         "years": "Apr 2023 \u2013 Present",
-        "description": "Leading enterprise-wide consulting for scalable API and cloud modernization initiatives across the FinTech platform. Spearheading AI/ML integration strategies including LLM-powered document processing, AI agent orchestration, and NVIDIA GPU-accelerated inference pipelines. Advising on API governance, developer experience, and DevOps automation using GitLab CI/CD while partnering with leadership on hybrid AWS/Azure cloud migration and AI-first architecture strategies."
+        "description": "Directing enterprise-wide architecture strategy and cross-functional engineering teams for scalable API, cloud, and big-data modernization across the FinTech platform. Own the technical roadmap for AI/ML integration \u2014 LLM-powered document processing, ML model training and fine-tuning pipelines, AI agent orchestration, and NVIDIA GPU-accelerated inference. Advise on API governance, developer experience, and DevOps automation using GitLab CI/CD while partnering with leadership on hybrid AWS/Azure cloud migration and AI-first architecture strategy."
       },
       {
         "company": "Silicon Valley Bank, San Diego",
         "title": "Senior Principal Software Architect",
         "years": "Jul 2020 \u2013 Apr 2023",
-        "description": "Architected and implemented scalable API frameworks with AI-powered analytics, reducing operational downtime by 30%. Pioneered LLM integration for automated compliance monitoring and intelligent API documentation generation. Directed multi-functional teams through enterprise platform modernization and introduced API specification standards that improved internal and external developer collaboration while evaluating AI/ML models for fraud detection and risk assessment."
+        "description": "Directed architecture strategy and technical teams delivering scalable API frameworks with AI-powered analytics, reducing operational downtime by 30%. Pioneered LLM integration for automated compliance monitoring and intelligent API documentation generation. Led multi-functional engineering teams through enterprise platform modernization, introduced API specification standards, and directed big-data pipelines and ML model training/evaluation for fraud detection and risk assessment."
       },
       {
         "company": "Achieve Internet, San Diego",
@@ -340,6 +325,18 @@
         "count": "50",
         "description": "10+ years, Proficient in VueJs and ReactJS for building responsive user interfaces and web applications" },
       {
+        "value": "Team Direction & Architecture Leadership",
+        "count": "50",
+        "description": "15+ years, Directing engineering teams and owning system architecture end-to-end — setting technical roadmap, mentoring engineers, and serving as final architecture decision-maker on AI/ML and big data initiatives" },
+      {
+        "value": "Big Data & Data Pipelines",
+        "count": "50",
+        "description": "5+ years, Architecting large-scale data ingestion, ETL/ELT pipelines, and streaming systems (Kafka, Spark) that feed governed context into ML training and RAG retrieval" },
+      {
+        "value": "ML Model Training & Fine-Tuning",
+        "count": "50",
+        "description": "5+ years, Directing distributed and phased model training, LoRA/adapter fine-tuning, checkpoint-aware recovery, and reproducible artifact lineage from raw data to deployable model" },
+      {
         "value": "AI/ML Engineering",
         "count": "50",
         "description": "5+ years, Building and deploying AI/ML systems including model training, fine-tuning, and production inference pipelines" },
@@ -472,26 +469,153 @@
     ],
     "objectives": [
       {
-        "name": "Directing large-scale API and cloud modernization initiatives with AI-first architecture that improve scalability and time-to-market.", "level": "90%" },
+        "name": "Directing engineering teams and owning end-to-end architecture for AI/ML integration, from big data pipelines to production inference.", "level": "95%" },
       {
-        "name": "Leading cross-functional engineering teams across FinTech, AI, and SaaS products with intelligent automation and AI agent orchestration.", "level": "90%" },
+        "name": "Leading ML model training strategy — dataset pipelines, fine-tuning, checkpoint lineage, and reproducible training operations at scale.", "level": "90%" },
       {
-        "name": "Championing modular UI/UX architecture and design systems enhanced with AI-powered personalization and accessibility.", "level": "90%" },
+        "name": "Architecting big data platforms and pipelines that feed reliable, governed context into LLMs, RAG systems, and autonomous agents.", "level": "90%" },
       {
-        "name": "Building and deploying LLM-powered applications, RAG pipelines, and autonomous AI agents for enterprise solutions.", "level": "90%" },
+        "name": "Directing cross-functional engineering teams across FinTech, AI, and SaaS products, mentoring engineers and setting technical roadmap.", "level": "90%" },
       {
-        "name": "Partnering with executive leadership to align AI/ML technical roadmaps with product vision, regulatory strategy, and NVIDIA GPU-accelerated computing.", "level": "90%" },
+        "name": "Building and shipping production AI systems — RAG platforms, autonomous agents, generative media pipelines, and API infrastructure.", "level": "90%" },
       {
-        "name": "Driving DevOps, CI/CD, MLOps, and automation practices that increase reliability, deployment frequency, and AI model governance.", "level": "90%" }
+        "name": "Partnering with executive leadership to align AI/ML and big-data architecture with product strategy, compliance, and NVIDIA GPU-accelerated computing.", "level": "90%" }
     ]
   },
+  "caseStudies": [
+    {
+      "id": "realmemoryai",
+      "title": "RealLexi / RealMemoryAI",
+      "tagline": "Private, source-grounded company memory for AI agents",
+      "url": "https://realmemoryai.com",
+      "role": "Founder & Principal Architect, Reallexi LLC",
+      "description": "Directed the architecture of a tenant-isolated company-memory platform that turns documents, URLs, images, and email sources into governed AI context. Owns the full path from ingestion to grounded retrieval to scoped agent and API access, so answers stay traceable to approved sources instead of becoming an invisible permission layer.",
+      "stack": ["RAG Pipelines", "Vector Retrieval", "Multi-Tenant Architecture", "LLM Orchestration", "Scoped APIs"],
+      "architecture": {
+        "steps": [
+          { "icon": "📥", "label": "Source Ingestion", "sublabel": "Docs · URLs · images · email" },
+          { "icon": "🔒", "label": "Tenant-Isolated Memory", "sublabel": "Per-workspace boundary" },
+          { "icon": "🔍", "label": "Retrieval & Ranking", "sublabel": "Grounded context, not guesses" },
+          { "icon": "🧠", "label": "Model Orchestration", "sublabel": "Route + reason across providers" },
+          { "icon": "🤖", "label": "Agent & API Access", "sublabel": "Scoped tools, human approval" }
+        ]
+      }
+    },
+    {
+      "id": "ai-model-builder",
+      "title": "AI Model Builder",
+      "tagline": "Local ML training with checkpoint lineage and proof",
+      "url": "https://llm.reallexi.io",
+      "role": "Founder & ML Systems Architect, Reallexi LLC",
+      "description": "Architected a local ML training platform that turns ambitious training targets into bounded, recoverable phases. Directed the design of the phased-training engine, checkpoint-aware recovery, and artifact lineage (LoRA adapters, standalone SafeTensors, GGUF) so every training run stays auditable and resumable, with a direct publishing path to the Hugging Face Hub.",
+      "stack": ["Distributed & Phased Training", "LoRA Fine-Tuning", "Checkpoint Recovery", "Model Artifact Lineage", "Hugging Face Hub"],
+      "architecture": {
+        "steps": [
+          { "icon": "🗂️", "label": "Data Sources", "sublabel": "Bounded input windows" },
+          { "icon": "⚙️", "label": "Phased Training Engine", "sublabel": "Train → checkpoint → recover" },
+          { "icon": "♻️", "label": "Recovery Layer", "sublabel": "Same window, no duplicate work" },
+          { "icon": "🧬", "label": "Artifact Lineage", "sublabel": "LoRA · SafeTensors · GGUF" },
+          { "icon": "🚀", "label": "Publish & Verify", "sublabel": "Model cards, Hub, signed evidence" }
+        ]
+      }
+    },
+    {
+      "id": "ai-apply-pilot",
+      "title": "AI Apply Pilot",
+      "tagline": "Evidence-based job search, human-approved every step",
+      "url": "https://aiapplypilot.com",
+      "role": "Founder & Product Architect, Reallexi LLC",
+      "description": "Architected an AI job-search workspace that compares a candidate's resume against a job description, surfaces real alignment and gaps, and drafts evidence-linked resume updates for human review. Designed the product so AI assists analysis while every submission, approval, and edit stays under the candidate's control.",
+      "stack": ["NLP Matching", "Evidence Extraction", "Application Tracking", "Subscription Billing", "Human-in-the-Loop Design"],
+      "architecture": {
+        "steps": [
+          { "icon": "📄", "label": "Resume + Job Description", "sublabel": "Candidate-provided inputs" },
+          { "icon": "⚖️", "label": "Evidence Comparison", "sublabel": "Alignment + visible gaps" },
+          { "icon": "✍️", "label": "AI-Drafted Updates", "sublabel": "Suggested, not assumed" },
+          { "icon": "✅", "label": "Human Review", "sublabel": "Approve, edit, or discard" },
+          { "icon": "📊", "label": "Application Tracking", "sublabel": "Pipeline + follow-ups" }
+        ]
+      }
+    },
+    {
+      "id": "real-memory-agent",
+      "title": "Real Memory AI Agent",
+      "tagline": "A workspace-aware engineering agent, not a chat panel",
+      "url": "https://marketplace.visualstudio.com/items?itemName=ReallexiLLC.real-memory-ai-agent",
+      "role": "Founder & Agent Architect, Reallexi LLC",
+      "description": "Designed a VS Code engineering agent with Planner + Coder, Auto, Direct, and Single execution modes that inspects and edits the real workspace, runs commands and validation, and preserves session and project evidence — extended across Chrome, CLI, and MCP-assisted workflows.",
+      "stack": ["VS Code Extension API", "MCP", "Multi-Provider LLM Routing", "Command Execution", "Session Memory"],
+      "architecture": {
+        "steps": [
+          { "icon": "💬", "label": "Request", "sublabel": "Developer intent" },
+          { "icon": "🗺️", "label": "Planner", "sublabel": "Roadmap + acceptance criteria" },
+          { "icon": "🛠️", "label": "Coder", "sublabel": "Direct workspace edits" },
+          { "icon": "🧪", "label": "Validation", "sublabel": "Run commands, checks" },
+          { "icon": "📋", "label": "Review Artifacts", "sublabel": "Evidence, diffs, revert control" }
+        ]
+      }
+    },
+    {
+      "id": "reallexi-ai-studio",
+      "title": "RealLexi AI Studio",
+      "tagline": "Privacy-aware AI image & video generation studio",
+      "url": "https://ai.reallexi.com",
+      "role": "Founder & Platform Architect, Reallexi LLC",
+      "description": "Architected a creative studio for generating and editing AI images and video from reference media, with a review step before anything reaches the public gallery — built privacy-first, with generation pipelines routed across multiple model providers.",
+      "stack": ["Generative Media Pipelines", "Reference-Conditioned Editing", "Content Review", "Media Storage"],
+      "architecture": {
+        "steps": [
+          { "icon": "🖼️", "label": "Prompt + Reference Media", "sublabel": "Image / video input" },
+          { "icon": "🎨", "label": "Generation Pipeline", "sublabel": "Model-routed rendering" },
+          { "icon": "✅", "label": "Review Queue", "sublabel": "Approve before publish" },
+          { "icon": "🌐", "label": "Public Gallery", "sublabel": "Approved work only" }
+        ]
+      }
+    },
+    {
+      "id": "rlx-gate",
+      "title": "RLX Gate",
+      "tagline": "A governed control plane for Envoy — no Kubernetes required",
+      "url": "https://rlxgate.com",
+      "role": "Founder & Infrastructure Architect, Reallexi LLC",
+      "description": "Architected a self-hostable API gateway that separates a Go-based control plane from the Envoy data plane, so traffic decisions are governed, signed, and auditable before they ever touch production. Supports OpenAPI import with malware scanning, weighted backends with health checks, and API key/JWT/OIDC identity, deployable on a single VPS without a Kubernetes dependency.",
+      "stack": ["Go", "Envoy", "OIDC / JWT", "Signed Config Revisions", "Self-Hosted Deployment"],
+      "architecture": {
+        "steps": [
+          { "icon": "📑", "label": "OpenAPI Import", "sublabel": "Scanned + validated" },
+          { "icon": "🧭", "label": "Control Plane (Go)", "sublabel": "Tenant config, signed revisions" },
+          { "icon": "🚦", "label": "Data Plane (Envoy)", "sublabel": "Routing, rate limits, health checks" },
+          { "icon": "🔑", "label": "Identity Layer", "sublabel": "API keys · JWT · OIDC" },
+          { "icon": "🕵️", "label": "Audit & Rollback", "sublabel": "Versioned, reversible" }
+        ]
+      }
+    },
+    {
+      "id": "apidocpro",
+      "title": "ApiDocPro",
+      "tagline": "API documentation as a hosted, always-current service",
+      "url": "https://apidocpro.com",
+      "role": "Founder & Product Architect, Reallexi LLC",
+      "description": "Built a SaaS documentation engine that imports OpenAPI, Swagger, or GraphQL definitions and turns them into modern, branded, hosted docs — including the custom OpenAPI/AsyncAPI UI renderer at ui.apidocpro.com — so engineering, writing, and product teams stay aligned with the real implementation instead of hand-maintained docs.",
+      "stack": ["OpenAPI / Swagger / GraphQL", "Static Doc Generation", "Hosting & Versioning"],
+      "architecture": {
+        "steps": [
+          { "icon": "📘", "label": "API Spec", "sublabel": "OpenAPI · Swagger · GraphQL" },
+          { "icon": "🧩", "label": "Parse & Render", "sublabel": "Branded, searchable docs" },
+          { "icon": "☁️", "label": "Host & Version", "sublabel": "Always matches implementation" },
+          { "icon": "👥", "label": "Team Access", "sublabel": "Devs, writers, product in sync" }
+        ]
+      }
+    }
+  ],
   "portfolio": {
     "projects": [
       {
-        "title": "OpenAPI/AsyncAPI UI Custom Render",
-        "category": "AI-Powered API Documentation Engine",
-        "url": "https://ui.apidocpro.com",
-        "description": "Intelligent API documentation renderer with AI-assisted schema generation, auto-completion, and natural language API exploration powered by LLMs."
+        "title": "Reallexi LLC",
+        "category": "AI Product Studio",
+        "image": "/assets/images/webicon.png",
+        "url": "https://reallexi.io",
+        "description": "Founder-led AI product studio in Cary, NC building private AI memory, controlled agents, and production software — the parent studio behind RealLexi, AI Model Builder, AI Apply Pilot, and the rest of the Reallexi product suite."
       },
       {
         "title": "RealLexi The Real Word",
@@ -500,16 +624,16 @@
         "description": "AI-driven content platform leveraging NLP, sentiment analysis, and generative AI for automated content creation and real-time language processing."
       },
       {
+        "title": "OpenAPI/AsyncAPI UI Custom Render",
+        "category": "Open-Source API Documentation Engine",
+        "url": "https://ui.apidocpro.com",
+        "description": "Custom-built OpenAPI/AsyncAPI documentation renderer powering ApiDocPro, with schema-driven rendering and natural-language API exploration."
+      },
+      {
         "title": "Real Estates Virtual World Game",
         "category": "AI-Enhanced 3D Virtual Environment",
         "url": "https://www.revwgame.com",
         "description": "3D virtual real estate platform with AI-powered property recommendations, procedural generation, and intelligent NPC interactions."
-      },
-      {
-        "title": "API Doc Pro, Render and Editor",
-        "category": "AI-Assisted API Design & Documentation",
-        "url": "https://apidocpro.com",
-        "description": "Enterprise API portal with AI-powered documentation generation, intelligent code samples, and automated API testing with LLM integration."
       },
       {
         "title": "GetFreeAPI Management Platform",
@@ -518,10 +642,10 @@
         "description": "Full-lifecycle API management platform with AI-driven analytics, automated rate limiting, anomaly detection, and intelligent traffic routing."
       },
       {
-        "title": "Flying Astronaut",
-        "category": "AI-Powered Mobile Game",
+        "title": "AI-Adaptive Mobile Games",
+        "category": "AI-Powered Mobile Games",
         "url": "https://www.ddkits.com",
-        "description": "Mobile game featuring AI-driven procedural level generation, adaptive difficulty, and real-time player behavior analysis."
+        "description": "Flying Astronaut and Flying Eagle — mobile games featuring AI-driven procedural level generation, adaptive difficulty, and real-time player behavior analysis."
       },
       {
         "title": "DDKits CLI",
@@ -536,12 +660,6 @@
         "description": "Construction management platform with AI-driven project forecasting, computer vision for site inspection, and predictive cost analytics."
       },
       {
-        "title": "Flying Eagle",
-        "category": "AI-Adaptive Mobile Game",
-        "url": "https://www.ddkits.com",
-        "description": "Mobile game with AI-powered dynamic difficulty adjustment, procedural content generation, and player engagement optimization."
-      },
-      {
         "title": "Mawajez News",
         "category": "AI News Aggregation & NLP Engine",
         "image": "/assets/images/webicon.png",
@@ -550,45 +668,17 @@
       },
       {
         "title": "Drupal Core Contributor",
-        "category": "Open-Source AI Integration",
+        "category": "Open-Source Contribution",
         "image": "/assets/images/drupal.png",
         "url": "https://www.Drupal.org",
-        "description": "Core contributor advancing Drupal with AI-powered content recommendations, automated testing, and intelligent search capabilities."
+        "description": "Core contributor advancing Drupal with content recommendations, automated testing, and search improvements."
       },
       {
         "title": "Laravel Core Contributor",
-        "category": "Open-Source AI Tooling",
+        "category": "Open-Source Contribution",
         "image": "/assets/images/laravel.webp",
         "url": "http://www.packagist.org",
-        "description": "Core contributor building AI-assisted development tools, intelligent queue management, and ML-powered performance optimization for Laravel."
-      },
-      {
-        "title": "RealLexi.io",
-        "category": "AI Platform & SaaS",
-        "image": "/assets/images/webicon.png",
-        "url": "https://reallexi.io",
-        "description": "AI-powered SaaS platform delivering intelligent automation, content generation, and business intelligence tools for enterprise clients."
-      },
-      {
-        "title": "AI.RealLexi.com",
-        "category": "AI Agent & LLM Platform",
-        "image": "/assets/images/webicon.png",
-        "url": "https://ai.reallexi.com",
-        "description": "Dedicated AI agent platform featuring LLM-powered assistants, RAG pipelines, autonomous agent orchestration, and NVIDIA NIM integration for enterprise AI workflows."
-      },
-      {
-        "title": "RealMemoryAI.com",
-        "category": "AI Memory & Agent Framework",
-        "image": "/assets/images/webicon.png",
-        "url": "https://realmemoryai.com",
-        "description": "AI memory framework and agent platform enabling persistent context, long-term memory for AI agents, and intelligent conversation management across sessions."
-      },
-      {
-        "title": "RealMemory Agent — VS Code Extension",
-        "category": "AI Developer Tooling",
-        "image": "/assets/images/webicon.png",
-        "url": "https://marketplace.visualstudio.com/items?itemName=RealLexi.realmemory-agent",
-        "description": "VS Code extension providing AI-powered coding assistance with persistent memory, context-aware suggestions, and intelligent agent capabilities directly in the developer workflow."
+        "description": "Core contributor building developer tooling, queue management, and performance optimizations for the Laravel ecosystem."
       }
     ]
   }

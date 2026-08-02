@@ -97,11 +97,12 @@ export default function Contact({ data }) {
             <div className="contact-social">
               {social?.map((network) => (
                 <motion.a
-                  key={network.name}
+                  key={network.url}
                   href={network.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-social-btn"
+                  aria-label={`Connect on ${network.name}`}
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.95 }}
                 >

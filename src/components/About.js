@@ -34,7 +34,7 @@ export default function About({ data }) {
           transition={{ duration: 0.6 }}
         >
           <span className="section-tag">About Me</span>
-          <h2 className="section-title">Software Architect & <span className="gradient-text">AI Engineering Leader</span></h2>
+          <h2 className="section-title">AI/ML Architecture Director & <span className="gradient-text">Engineering Team Lead</span></h2>
         </motion.div>
 
         <div className="about-grid">
@@ -101,11 +101,12 @@ export default function About({ data }) {
             <div className="about-social">
               {social?.map((network) => (
                 <motion.a
-                  key={network.name}
+                  key={network.url}
                   href={network.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-btn"
+                  aria-label={`${name} on ${network.name}`}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >

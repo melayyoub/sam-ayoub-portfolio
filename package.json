@@ -12,8 +12,16 @@
   },
   "homepage": "https://sam.reallexi.com",
   "keywords": [
-    "ai", "ml", "nvidia", "agents", "react", "threejs",
-    "portfolio", "reallexi", "leadership", "fullstack"
+    "ai",
+    "ml",
+    "nvidia",
+    "agents",
+    "react",
+    "threejs",
+    "portfolio",
+    "reallexi",
+    "leadership",
+    "fullstack"
   ],
   "license": "MIT License",
   "private": false,
@@ -64,7 +72,8 @@
     "webpack-dev-server": "webpack-dev-server",
     "dev": "npm run webpack-dev-server -- --env mode=development",
     "prod": "npm run webpack -- --env mode=production",
-    "predeploy": "npm run build",
+    "resume:build": "node scripts/generate-resume.js",
+    "predeploy": "npm run resume:build && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -74,7 +83,10 @@
     ],
     "overrides": [
       {
-        "files": ["src/components/Office3D.js", "src/components/AIChat.js"],
+        "files": [
+          "src/components/Office3D.js",
+          "src/components/AIChat.js"
+        ],
         "rules": {
           "react/no-unknown-property": "off"
         }
@@ -98,6 +110,8 @@
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",
+    "@react-pdf/renderer": "^4.5.1",
+    "docx": "^9.7.1",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard": "^17.0.0",

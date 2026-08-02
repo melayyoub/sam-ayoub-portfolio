@@ -12,6 +12,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import CaseStudies from './components/CaseStudies';
 
 const Office3D = lazy(() => import('./components/Office3D'));
 const AIChat = lazy(() => import('./components/AIChat'));
@@ -43,6 +44,7 @@ export default function App() {
       </section>
 
       {resumeData.resume && <Resume data={resumeData.resume} />}
+      {resumeData.caseStudies && <CaseStudies data={resumeData.caseStudies} />}
       {resumeData.portfolio && <Portfolio data={resumeData.portfolio} />}
       {resumeData.main && <Contact data={resumeData.main} />}
       {resumeData.main && <Footer data={resumeData.main} />}

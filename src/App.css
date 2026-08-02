@@ -86,6 +86,11 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 0 24px;
 }
 
+/* Offset anchor-scroll targets so the fixed nav never covers a section's heading */
+section[id] {
+  scroll-margin-top: 88px;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 60px;
@@ -931,6 +936,124 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--accent-blue);
 }
 
+/* ── CASE STUDIES ─────────────────────────────────────────── */
+.modern-case-studies {
+  padding: 100px 0;
+  position: relative;
+}
+
+.case-studies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.case-study {
+  padding: 32px;
+}
+
+.case-study-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.case-study-role {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  margin-bottom: 6px;
+}
+
+.case-study-header h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.case-study-tagline {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  margin-top: 4px;
+}
+
+.case-study-link {
+  padding: 10px 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.case-study-description {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.case-study-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 26px;
+}
+
+/* Architecture flow diagram */
+.architecture-flow {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+}
+
+.flow-node {
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 14px 10px;
+  min-width: 120px;
+}
+
+.flow-node-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.flow-node-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.flow-node-sublabel {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.flow-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 24px;
+  color: var(--accent-blue);
+  opacity: 0.6;
+}
+.flow-arrow-v { display: none; }
+
 /* Project Modal */
 .project-modal-backdrop {
   position: fixed;
@@ -1469,6 +1592,27 @@ img { max-width: 100%; height: auto; display: block; }
   .resume-tab span { display: none; }
 
   .projects-grid { grid-template-columns: 1fr; }
+
+  .case-study { padding: 24px 20px; }
+  .case-study-header { flex-direction: column; }
+  .case-study-link { width: 100%; justify-content: center; }
+
+  .architecture-flow { flex-direction: column; padding: 16px; }
+  .flow-node {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    text-align: left;
+    width: 100%;
+    padding: 10px 4px;
+  }
+  .flow-node-icon { grid-row: 1 / 3; margin-bottom: 0; align-self: center; }
+  .flow-node-label { grid-column: 2; grid-row: 1; }
+  .flow-node-sublabel { grid-column: 2; grid-row: 2; }
+  .flow-connector { width: 100%; height: 20px; }
+  .flow-arrow-h { display: none; }
+  .flow-arrow-v { display: block; }
 
   .ai-chat-window {
     width: calc(100vw - 32px);

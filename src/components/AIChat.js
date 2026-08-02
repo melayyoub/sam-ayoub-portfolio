@@ -9,41 +9,41 @@ import { FiMessageCircle, FiX, FiSend, FiCpu } from 'react-icons/fi';
 /* ─── Resume Knowledge Base ─── */
 const RESUME_KB = {
   name: "Sam Ayoub (Mutasem Elayyoub)",
-  title: "Software Architect & Engineering Director / Software Migration & Integration Consultant",
+  title: "AI/ML Architecture Director & Engineering Team Lead / Big Data & ML Training Systems",
   location: "Cary, NC / San Diego, CA",
-  currentRole: "Senior Software Architect at First Citizens Bank (Silicon Valley Bank division)",
-  summary: "15+ years leading software architecture, migration, and integration across FinTech, AI & SaaS. Expert in legacy-to-cloud migration, API modernization, and enterprise integration patterns.",
+  currentRole: "Software Architect Consultant at First Citizens Bank, and Founder & Principal Architect of Reallexi LLC",
+  summary: "15+ years directing engineering teams and owning architecture for AI/ML integration, big data platforms, and ML model training — plus a deep enterprise background in FinTech, SaaS, and software migration/integration.",
   expertise: [
-    "Software Migration & Integration Consulting",
-    "Enterprise Architecture & API Modernization",
+    "Team Direction & Architecture Leadership",
+    "Big Data & Data Pipelines (Kafka, Spark, ETL/ELT)",
+    "ML Model Training & Fine-Tuning (LoRA, checkpoint lineage, distributed training)",
     "AI/ML Engineering & LLM Integration",
-    "AI Agents & Orchestration (LangChain, CrewAI)",
+    "AI Agents & Orchestration (LangChain, CrewAI, MCP)",
     "RAG & Vector Databases",
     "Cloud Infrastructure (AWS, Docker, Kubernetes)",
-    "FinTech & Banking Systems Integration"
+    "Software Migration & Integration Consulting (FinTech & Banking)"
   ],
   certifications: [
     "NVIDIA Deep Learning Institute — Generative AI & LLMs",
     "NVIDIA NIM Agent Builder",
-    "AWS Solutions Architect",
-    "Kubernetes CKA"
+    "AWS Certified Solutions Architect Associate",
+    "Docker Certified Associate"
   ],
-  companies: ["First Citizens Bank / Silicon Valley Bank", "Silicon Valley Bank", "Achieve Internet", "Aira", "Outsell Inc."],
+  companies: ["Reallexi LLC (Founder)", "First Citizens Bank / Silicon Valley Bank", "Silicon Valley Bank", "Achieve Internet", "Aira", "Outsell Inc."],
   projects: [
-    "OpenAPI/AsyncAPI UI Render — AI-powered API documentation",
-    "RealLexi.io — AI-powered SaaS platform (https://reallexi.io)",
-    "RealLexi.com — AI content & NLP platform (https://reallexi.com)",
-    "AI.RealLexi.com — AI agent & LLM platform (https://ai.reallexi.com)",
-    "RealMemoryAI.com — AI memory & agent framework (https://realmemoryai.com)",
-    "RealMemory Agent — VS Code extension for AI-powered coding with persistent memory",
-    "API Doc Pro — AI-assisted API design",
-    "GetFreeAPI — AI-native API management",
-    "DDKits — AI-optimized DevOps automation"
+    "RealLexi / RealMemoryAI — tenant-isolated company-memory RAG platform (https://realmemoryai.com)",
+    "AI Model Builder — local ML training platform with checkpoint lineage & LoRA/GGUF artifacts (https://llm.reallexi.io)",
+    "AI Apply Pilot — evidence-based, human-approved AI job-search workspace (https://aiapplypilot.com)",
+    "Real Memory AI Agent — workspace-aware VS Code engineering agent",
+    "RealLexi AI Studio — privacy-aware AI image & video generation (https://ai.reallexi.com)",
+    "RLX Gate — self-hosted API gateway, Go control plane for Envoy (https://rlxgate.com)",
+    "ApiDocPro — hosted OpenAPI/GraphQL documentation SaaS (https://apidocpro.com)",
+    "Reallexi LLC — the AI product studio behind all of the above (https://reallexi.io)"
   ],
-  skills: ["React", "Vue.js", "Node.js", "Python", "Docker", "Kubernetes", "LangChain", "TensorFlow", "PyTorch", "NVIDIA AI & NIM", "MLOps", "RAG Pipelines"],
-  education: "BS Computer Science, various AI/ML certifications",
+  skills: ["Big Data Pipelines", "ML Model Training", "LangChain", "TensorFlow", "PyTorch", "NVIDIA AI & NIM", "MLOps", "RAG Pipelines", "React", "Node.js", "Python", "Docker", "Kubernetes"],
+  education: "MBA (Management), BS Computer Science, NVIDIA Deep Learning Institute certifications",
   website: "https://sam.reallexi.com",
-  linkedin: "linkedin.com/in/samayoub"
+  linkedin: "linkedin.com/in/samelayyoub"
 };
 
 /* ─── Local Knowledge Matcher ─── */
@@ -55,9 +55,19 @@ function getLocalResponse(query) {
     return `${RESUME_KB.name} is a ${RESUME_KB.title} based in ${RESUME_KB.location}. ${RESUME_KB.summary} Currently: ${RESUME_KB.currentRole}. Visit ${RESUME_KB.website} for more.`;
   }
 
-  // Migration & integration — primary expertise
+  // Team direction & leadership
+  if (q.includes('team') || q.includes('leadership') || q.includes('direct') || q.includes('mentor') || q.includes('manage')) {
+    return `Sam directs engineering teams and owns architecture end-to-end as ${RESUME_KB.currentRole}. He sets technical roadmap, mentors engineers, and is the final architecture decision-maker on AI/ML and big-data initiatives across FinTech and his own product studio, Reallexi LLC.`;
+  }
+
+  // Big data & ML training
+  if (q.includes('big data') || q.includes('data pipeline') || q.includes('train') || q.includes('fine-tun') || q.includes('fine tun') || q.includes('spark') || q.includes('kafka')) {
+    return `Sam architects big-data pipelines and directs ML model training strategy — dataset pipelines, distributed/phased training, LoRA fine-tuning, and checkpoint-aware artifact lineage. He built this firsthand as the architect of AI Model Builder (llm.reallexi.io), a local training platform with full model lineage from raw data to deployable model.`;
+  }
+
+  // Migration & integration — supporting expertise
   if (q.includes('migration') || q.includes('integration') || q.includes('consultant') || q.includes('architect')) {
-    return `Sam is primarily a Software Migration & Integration Consultant and Architect with 15+ years of experience. He specializes in legacy-to-cloud migration, enterprise integration patterns, API modernization, and FinTech systems integration. Currently leading migration initiatives at First Citizens Bank (SVB division) in ${RESUME_KB.location}.`;
+    return `Sam is an AI/ML Architecture Director & Engineering Team Lead with 15+ years of experience, including deep Software Migration & Integration Consulting in FinTech. He specializes in legacy-to-cloud migration, enterprise integration patterns, and API modernization — currently at First Citizens Bank (SVB division) in ${RESUME_KB.location} — alongside directing architecture for the AI product suite at Reallexi LLC.`;
   }
 
   // Experience / career

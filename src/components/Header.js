@@ -17,7 +17,7 @@ export default function Header({ data }) {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      const sections = ['contact', 'portfolio', 'resume', 'office', 'about', 'home'];
+      const sections = ['contact', 'portfolio', 'case-studies', 'resume', 'office', 'about', 'home'];
       for (const id of sections) {
         const el = document.getElementById(id);
         if (el && el.getBoundingClientRect().top <= 150) {
@@ -40,6 +40,7 @@ export default function Header({ data }) {
     { id: 'about', label: 'About' },
     { id: 'office', label: '3D Office' },
     { id: 'resume', label: 'Resume' },
+    { id: 'case-studies', label: 'Case Studies' },
     { id: 'portfolio', label: 'Works' },
     { id: 'contact', label: 'Contact' },
   ];
@@ -106,7 +107,12 @@ export default function Header({ data }) {
           </ul>
 
           {/* Mobile toggle */}
-          <button className="nav-mobile-toggle" onClick={() => setIsMobileOpen(!isMobileOpen)}>
+          <button
+            className="nav-mobile-toggle"
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+            aria-label={isMobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isMobileOpen}
+          >
             {isMobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </div>
@@ -152,7 +158,7 @@ export default function Header({ data }) {
             animate={{ scale: 1 }}
             transition={{ type: 'spring', delay: 0.2 }}
           >
-            🏗️ Software Migration & Integration Architect
+            🧠 AI/ML Architecture Director & Engineering Team Lead
           </motion.div>
 
           <h1 className="hero-title">
@@ -161,7 +167,7 @@ export default function Header({ data }) {
           </h1>
 
           <div className="hero-roles">
-            {description?.split('/').map((role, i) => (
+            {description?.split(' / ').map((role, i) => (
               <motion.span
                 key={i}
                 className="hero-role"

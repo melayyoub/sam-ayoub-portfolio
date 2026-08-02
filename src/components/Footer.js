@@ -28,17 +28,18 @@ export default function Footer({ data }) {
               {name?.split(' ')[0] || 'Sam'}
               <span className="logo-bracket">/&gt;</span>
             </span>
-            <p>Software Migration & Integration Architect</p>
+            <p>AI/ML Architecture Director & Engineering Team Lead</p>
           </div>
 
           <div className="footer-social">
             {social?.map((network) => (
               <motion.a
-                key={network.name}
+                key={network.url}
                 href={network.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-link"
+                aria-label={`${name} on ${network.name}`}
                 whileHover={{ scale: 1.2, y: -3 }}
                 whileTap={{ scale: 0.9 }}
               >
